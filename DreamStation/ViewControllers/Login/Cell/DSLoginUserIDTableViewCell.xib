@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSLoginUserIDTableViewCell" rowHeight="137" id="KGk-i7-Jjw" customClass="DSLoginUserIDTableViewCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择您的用户身份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2k-qi-fb3">
+                        <rect key="frame" x="15" y="15" width="305" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个手机账号只能绑定一个身份，请慎重选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxK-GD-vcU">
+                        <rect key="frame" x="15" y="43" width="305" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIj-PR-ll5">
+                        <rect key="frame" x="15" y="79" width="137.5" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="投资方">
+                            <color key="titleColor" red="0.13333333333333333" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="investorBtnOfClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eK6-os-QfS"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLA-IF-kUx">
+                        <rect key="frame" x="167.5" y="79" width="137.5" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="项目方">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="projectBtnOfClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="reh-5g-rCm"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="IxK-GD-vcU" firstAttribute="top" secondItem="C2k-qi-fb3" secondAttribute="bottom" constant="10" id="0cy-0z-NuM"/>
+                    <constraint firstItem="AIj-PR-ll5" firstAttribute="width" secondItem="BLA-IF-kUx" secondAttribute="width" id="16R-C1-ZbN"/>
+                    <constraint firstAttribute="trailing" secondItem="BLA-IF-kUx" secondAttribute="trailing" constant="15" id="34D-dX-0By"/>
+                    <constraint firstItem="C2k-qi-fb3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4iJ-o8-zHB"/>
+                    <constraint firstAttribute="trailing" secondItem="C2k-qi-fb3" secondAttribute="trailing" id="FW9-96-apk"/>
+                    <constraint firstItem="BLA-IF-kUx" firstAttribute="top" secondItem="AIj-PR-ll5" secondAttribute="top" id="LSD-rV-EdW"/>
+                    <constraint firstItem="IxK-GD-vcU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LyI-8V-EWD"/>
+                    <constraint firstItem="C2k-qi-fb3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="QwD-ET-rW2"/>
+                    <constraint firstAttribute="trailing" secondItem="IxK-GD-vcU" secondAttribute="trailing" id="Zru-LP-G8X"/>
+                    <constraint firstItem="BLA-IF-kUx" firstAttribute="leading" secondItem="AIj-PR-ll5" secondAttribute="trailing" constant="15" id="iD4-cl-XeK"/>
+                    <constraint firstItem="AIj-PR-ll5" firstAttribute="top" secondItem="IxK-GD-vcU" secondAttribute="bottom" constant="22" id="koZ-hu-6Sg"/>
+                    <constraint firstItem="AIj-PR-ll5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="kzc-oF-mek"/>
+                    <constraint firstItem="AIj-PR-ll5" firstAttribute="height" secondItem="BLA-IF-kUx" secondAttribute="height" id="lW4-eh-Qkb"/>
+                    <constraint firstAttribute="bottom" secondItem="AIj-PR-ll5" secondAttribute="bottom" constant="29.5" id="mVg-8T-CiI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="ProjectBtn" destination="BLA-IF-kUx" id="lzY-9T-6wR"/>
+                <outlet property="investorBtn" destination="AIj-PR-ll5" id="OVw-Zm-row"/>
+                <outlet property="projectBtn" destination="BLA-IF-kUx" id="ldw-yE-K9o"/>
+            </connections>
+            <point key="canvasLocation" x="217" y="223.5"/>
+        </tableViewCell>
+    </objects>
+</document>

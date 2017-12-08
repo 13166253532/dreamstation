@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mine Change PassVC-->
+        <scene sceneID="DTh-Ol-Kds">
+            <objects>
+                <viewController storyboardIdentifier="DSMineChangePassVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h7G-9J-2Pi" customClass="DSMineChangePassVC" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rdB-z3-nLg"/>
+                        <viewControllerLayoutGuide type="bottom" id="C7c-WI-Xvh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W61-yK-wDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="7dM-Rr-5Pd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="98"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="WiM-s6-6gz"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByF-bd-aMY">
+                                <rect key="frame" x="11" y="133" width="353" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="确认修改" backgroundImage="baseBtn_Bg">
+                                    <color key="titleColor" red="0.97034925549450568" green="0.98498727160561173" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonAction:" destination="h7G-9J-2Pi" eventType="touchUpInside" id="aLP-QR-xQE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ByF-bd-aMY" secondAttribute="trailing" constant="-5" id="BIn-74-MHp"/>
+                            <constraint firstItem="ByF-bd-aMY" firstAttribute="top" secondItem="7dM-Rr-5Pd" secondAttribute="bottom" constant="15" id="FgB-0O-9lD"/>
+                            <constraint firstItem="ByF-bd-aMY" firstAttribute="leading" secondItem="W61-yK-wDC" secondAttribute="leadingMargin" constant="-5" id="Ida-GF-C9n"/>
+                            <constraint firstItem="7dM-Rr-5Pd" firstAttribute="top" secondItem="rdB-z3-nLg" secondAttribute="bottom" id="Vj3-H3-7Dc"/>
+                            <constraint firstItem="7dM-Rr-5Pd" firstAttribute="leading" secondItem="W61-yK-wDC" secondAttribute="leading" id="bwi-zK-2ze"/>
+                            <constraint firstAttribute="trailing" secondItem="7dM-Rr-5Pd" secondAttribute="trailing" id="ow4-Gb-6j1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myButton" destination="ByF-bd-aMY" id="hk0-MB-aXT"/>
+                        <outlet property="myTableView" destination="7dM-Rr-5Pd" id="miU-WB-5Gt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqL-8Y-S4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="245"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseBtn_Bg" width="345" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

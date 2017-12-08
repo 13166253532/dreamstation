@@ -1,0 +1,20 @@
+/* 
+  DSWarningStrings.strings
+  DreamStation
+
+  Created by 刘佳斌 on 16/7/20.
+  Copyright © 2016年 QPP. All rights reserved.
+*/
+
+"DSEnterFalsePhone" = "请输入正确的手机号码";
+"DSEnterPhone" = "请输入您的手机号码";
+"DSEnerCerCode" = "请输入您的验证码";
+"DSEnterNewPwd" = "请输入您的密码";
+"DSEnterConPwd" = "请再次输入您的密码";
+"DSPwdDifferent" = "两次密码不一致";
+
+"DSPwdNumFailed" = "密码格式不正确，请输入6-16位数字或者字母";
+
+"DSInvestorString" = "是否需要进行投资方认证?";
+"DSProjectString" = "是否需要进行项目方认证?";
+

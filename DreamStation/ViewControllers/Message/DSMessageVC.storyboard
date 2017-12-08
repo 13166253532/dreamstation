@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MessageVC-->
+        <scene sceneID="enk-Il-cBz">
+            <objects>
+                <viewController storyboardIdentifier="DSMessageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qqy-CY-49C" customClass="DSMessageVC" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="laA-0F-YSx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fyr-H9-diN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lhW-GD-6EI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AMW-SJ-95f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="J7i-qk-Oq6">
+                                <rect key="frame" x="152.5" y="229" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Np0-NL-PQW"/>
+                                    <constraint firstAttribute="height" constant="70" id="wVV-Yn-TmF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您暂无消息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bp5-ZQ-mgG">
+                                <rect key="frame" x="0.0" y="307" width="375" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J7i-qk-Oq6" firstAttribute="top" secondItem="lhW-GD-6EI" secondAttribute="top" constant="229" id="3BW-qy-brQ"/>
+                            <constraint firstAttribute="trailing" secondItem="bp5-ZQ-mgG" secondAttribute="trailing" id="BjL-nF-dTN"/>
+                            <constraint firstItem="J7i-qk-Oq6" firstAttribute="centerX" secondItem="AMW-SJ-95f" secondAttribute="centerX" id="Pet-jS-oVr"/>
+                            <constraint firstItem="bp5-ZQ-mgG" firstAttribute="leading" secondItem="lhW-GD-6EI" secondAttribute="leading" id="QvY-eT-0Ew"/>
+                            <constraint firstAttribute="bottom" secondItem="AMW-SJ-95f" secondAttribute="bottom" id="dOX-9Y-Lse"/>
+                            <constraint firstItem="bp5-ZQ-mgG" firstAttribute="top" secondItem="J7i-qk-Oq6" secondAttribute="bottom" constant="8" id="uVC-nr-cRg"/>
+                            <constraint firstAttribute="trailing" secondItem="AMW-SJ-95f" secondAttribute="trailing" id="vdu-RD-9SV"/>
+                            <constraint firstItem="AMW-SJ-95f" firstAttribute="leading" secondItem="lhW-GD-6EI" secondAttribute="leading" id="w8e-VM-Hds"/>
+                            <constraint firstItem="AMW-SJ-95f" firstAttribute="top" secondItem="lhW-GD-6EI" secondAttribute="top" id="yjY-nT-YGk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertImgView" destination="J7i-qk-Oq6" id="xKd-2s-4NH"/>
+                        <outlet property="alertLab" destination="bp5-ZQ-mgG" id="S4A-l3-iO2"/>
+                        <outlet property="myTableView" destination="AMW-SJ-95f" id="soQ-Ew-HX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFQ-sB-6C6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

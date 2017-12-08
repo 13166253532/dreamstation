@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DSProjectEighthCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSProjectEighthCell" id="KGk-i7-Jjw" customClass="DSProjectEighthCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0p2-jz-rwU">
+                        <rect key="frame" x="15" y="13" width="38" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="D7Q-dV-GwY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="D7Q-dV-GwY"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMH-fI-8bx">
+                        <rect key="frame" x="256" y="6" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="oX3-Ig-eGX"/>
+                        </constraints>
+                        <connections>
+                            <action selector="switchOfClick:" destination="KGk-i7-Jjw" eventType="valueChanged" id="XQc-l9-5pz"/>
+                        </connections>
+                    </switch>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homePage_biaoji" translatesAutoresizingMaskIntoConstraints="NO" id="ymy-De-71T">
+                        <rect key="frame" x="54" y="13" width="5" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="Vnn-kV-Vm9"/>
+                            <constraint firstAttribute="height" constant="5" id="yia-ko-opR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0p2-jz-rwU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0h8-Kg-uHn"/>
+                    <constraint firstItem="0p2-jz-rwU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4h9-kr-HSg"/>
+                    <constraint firstItem="ymy-De-71T" firstAttribute="leading" secondItem="0p2-jz-rwU" secondAttribute="trailing" constant="1" id="5eR-fj-YLX"/>
+                    <constraint firstAttribute="trailing" secondItem="DMH-fI-8bx" secondAttribute="trailing" constant="15" id="EKu-7j-jiD"/>
+                    <constraint firstItem="DMH-fI-8bx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="LQW-wO-Cbu"/>
+                    <constraint firstAttribute="bottom" secondItem="0p2-jz-rwU" secondAttribute="bottom" id="SOa-3p-Q64"/>
+                    <constraint firstItem="0p2-jz-rwU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="WK5-cC-oM8"/>
+                    <constraint firstAttribute="bottom" secondItem="DMH-fI-8bx" secondAttribute="bottom" constant="6" id="cft-Tw-pOU"/>
+                    <constraint firstItem="ymy-De-71T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="tbI-QK-Ujq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0h8-Kg-uHn"/>
+                        <exclude reference="SOa-3p-Q64"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="biaojiImage" destination="ymy-De-71T" id="y70-Nk-6la"/>
+                <outlet property="switchBtn" destination="DMH-fI-8bx" id="R4l-aW-N2J"/>
+                <outlet property="titleLabel" destination="0p2-jz-rwU" id="AYa-hs-YJ7"/>
+            </connections>
+            <point key="canvasLocation" x="194" y="248"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homePage_biaoji" width="5" height="5"/>
+    </resources>
+</document>

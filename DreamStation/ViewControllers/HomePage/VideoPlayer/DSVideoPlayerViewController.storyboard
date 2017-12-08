@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Video Player View Controller-->
+        <scene sceneID="WsJ-ha-TIL">
+            <objects>
+                <viewController storyboardIdentifier="DSVideoPlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SOJ-S3-vag" customClass="DSVideoPlayerViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tBt-bH-Hxp"/>
+                        <viewControllerLayoutGuide type="bottom" id="4j8-fh-uWU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="80n-B7-11j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-fj-DE9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="afJ-fj-DE9" firstAttribute="leading" secondItem="80n-B7-11j" secondAttribute="leading" id="2MX-K8-7d7"/>
+                            <constraint firstAttribute="bottom" secondItem="afJ-fj-DE9" secondAttribute="bottom" id="99G-fb-8tm"/>
+                            <constraint firstItem="afJ-fj-DE9" firstAttribute="top" secondItem="80n-B7-11j" secondAttribute="top" id="Cvc-sl-Qhv"/>
+                            <constraint firstAttribute="trailing" secondItem="afJ-fj-DE9" secondAttribute="trailing" id="vt7-mr-5qc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoTableView" destination="afJ-fj-DE9" id="bSg-oJ-mMg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbL-yN-GYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241.59999999999999" y="233.59"/>
+        </scene>
+    </scenes>
+</document>

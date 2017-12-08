@@ -1,0 +1,43 @@
+/* 
+  DSMineStrings.strings
+  DreamStation
+
+  Created by QPP on 16/7/21.
+  Copyright © 2016年 QPP. All rights reserved.
+*/
+"MineInvestorsAuthentication"="投资方认证";
+"MineUnAuthentication"="未认证";
+"MineAuthentication" = "已认证";
+"MineAuthenticationIng" = "认证中";
+
+"MineUnAuthenticationRich"="未认证投资方";
+"MineUnAuthenticationProgram"="未认证项目方";
+"MinePleaseAuthentication"="请认证";
+
+"MineMyDate"="我的约谈";
+"MineInviteMeFollow"="请我关注";
+"MineInviteUsFollow"="请我们关注";
+"MineCollection"="我的收藏";
+"MineMyActivity"="我的活动";
+"MineShareFirend"="推荐给朋友";
+"MineSetting"="设置";
+"MinePersonalInvestors"="个人投资者";
+"MineProgramAuthentication"="项目方认证";
+"MineMyProgram"="我的项目";
+"MineDateMe"="约谈我的";
+"MineDateMeStr"="个投资人对您有约谈意向";
+"MineMyFollow"="我的关注";
+"MineLogBackIn"="重新登录";
+
+"MineAuthenticationInvestors"="认证投资方";
+"MineAuthenticationProgram"="认证项目方";
+"MineAuthenticationPark"="认证园区方";
+
+"MineChooseProject"="选择项目公司";
+
+"MineProjectAuthentication"="输入验证信息";
+"MineProjectInformation"="输入项目信息";
+
+
+"MineProjectAttention1" = "1：邮件标题为：账号识别码或者注册手机+项目公司全称。\n2：BP文档作为附件发送，格式可以为PNG图片，PPT，Word或PDF。\n3：投资亮点，行业及市场，商业模式，产品或服务优势等作为正文内容。每个内容不得超过600字。\n4：为保障贵司商业信息安全及遵循我方平台规则，提交的信息请隐去公司名、公司logo、联系方式等敏感信息。\n5：商业计划书和投资亮点为必传文件，如未提交，则审核不予通过。";
+"MineProjectAttention2" = "1：请把视频上传至指定网站www.123.com\n2：输入您在该网站中的视频链接";

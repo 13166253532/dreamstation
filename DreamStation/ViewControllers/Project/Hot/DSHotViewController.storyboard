@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hot View Controller-->
+        <scene sceneID="nw2-N8-j2f">
+            <objects>
+                <viewController storyboardIdentifier="DSHotViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9cV-tw-jCo" customClass="DSHotViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4QA-zL-ncU"/>
+                        <viewControllerLayoutGuide type="bottom" id="YO3-qc-Nr8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XCV-VE-Bni">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ncc-fL-0NP">
+                                <rect key="frame" x="10" y="0.0" width="355" height="617"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="Cgp-JU-Me3">
+                                <rect key="frame" x="152.5" y="258.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="6z8-e5-mHv"/>
+                                    <constraint firstAttribute="height" constant="70" id="qDK-kZ-5Nu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无匹配的结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elu-EI-Omh">
+                                <rect key="frame" x="10" y="333.5" width="355" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oW9-Zi-ClT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ncc-fL-0NP" firstAttribute="leading" secondItem="XCV-VE-Bni" secondAttribute="leading" constant="10" id="4kS-V5-tVu"/>
+                            <constraint firstAttribute="trailing" secondItem="ncc-fL-0NP" secondAttribute="trailing" constant="10" id="BzJ-tb-p3L"/>
+                            <constraint firstAttribute="trailing" secondItem="Elu-EI-Omh" secondAttribute="trailing" constant="10" id="M7Q-gT-YCy"/>
+                            <constraint firstItem="Elu-EI-Omh" firstAttribute="top" secondItem="Cgp-JU-Me3" secondAttribute="bottom" constant="5" id="Rwb-kN-JEu"/>
+                            <constraint firstItem="ncc-fL-0NP" firstAttribute="top" secondItem="XCV-VE-Bni" secondAttribute="top" id="UDO-1l-whs"/>
+                            <constraint firstItem="Cgp-JU-Me3" firstAttribute="centerY" secondItem="XCV-VE-Bni" secondAttribute="centerY" constant="-40" id="eRQ-d1-8Qy"/>
+                            <constraint firstItem="Cgp-JU-Me3" firstAttribute="centerX" secondItem="XCV-VE-Bni" secondAttribute="centerX" id="ed6-gb-5bV"/>
+                            <constraint firstItem="Elu-EI-Omh" firstAttribute="leading" secondItem="XCV-VE-Bni" secondAttribute="leading" constant="10" id="toQ-3i-VSv"/>
+                            <constraint firstAttribute="bottom" secondItem="ncc-fL-0NP" secondAttribute="bottom" constant="50" id="yn1-Dt-0De"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attImage" destination="Cgp-JU-Me3" id="G7h-LS-qiI"/>
+                        <outlet property="attLabel" destination="Elu-EI-Omh" id="K5i-Ju-nfd"/>
+                        <outlet property="tableView" destination="ncc-fL-0NP" id="4Cv-xT-bMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuS-DE-2Co" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="243"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

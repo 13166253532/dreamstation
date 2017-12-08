@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSMineSetingOneCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSMineSetingOneCell" id="tQG-8h-3iG" customClass="DSMineSetingOneCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tQG-8h-3iG" id="ZjE-09-JBa">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BT-Zf-Pxg">
+                        <rect key="frame" x="15" y="13" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdH-pB-JwV">
+                        <rect key="frame" x="267" y="13" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OdH-pB-JwV" firstAttribute="centerY" secondItem="ZjE-09-JBa" secondAttribute="centerY" id="3LB-IM-Fhq"/>
+                    <constraint firstItem="4BT-Zf-Pxg" firstAttribute="leading" secondItem="ZjE-09-JBa" secondAttribute="leading" constant="15" id="PUI-qm-9rg"/>
+                    <constraint firstAttribute="trailing" secondItem="OdH-pB-JwV" secondAttribute="trailing" constant="15" id="WcX-YO-klO"/>
+                    <constraint firstItem="4BT-Zf-Pxg" firstAttribute="centerY" secondItem="ZjE-09-JBa" secondAttribute="centerY" id="rD7-Ep-wY1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="subTitle" destination="OdH-pB-JwV" id="lrR-ge-TyB"/>
+                <outlet property="title" destination="4BT-Zf-Pxg" id="mMz-yO-meT"/>
+            </connections>
+            <point key="canvasLocation" x="85" y="66"/>
+        </tableViewCell>
+    </objects>
+</document>

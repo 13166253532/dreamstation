@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSSecreenIndustryTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSSecreenIndustryTableViewCell" rowHeight="140" id="PeL-vl-Yqc" customClass="DSSecreenIndustryTableViewCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PeL-vl-Yqc" id="Ryx-rl-JRb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPu-5Y-5AM">
+                        <rect key="frame" x="15" y="25" width="105" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NQg-ea-blY">
+                        <rect key="frame" x="0.0" y="41" width="320" height="88.5"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TSW-Uz-WLf">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55B-AX-Niq">
+                        <rect key="frame" x="250" y="0.0" width="70" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="vvD-FM-zuQ"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="action:" destination="PeL-vl-Yqc" eventType="touchUpInside" id="si0-vQ-QT9"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hot_Hline" translatesAutoresizingMaskIntoConstraints="NO" id="HDi-Fx-7QK">
+                        <rect key="frame" x="0.0" y="138.5" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="SoL-Yr-s7z"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mo4-uN-8Vm">
+                        <rect key="frame" x="286" y="25" width="12" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="cap-td-6JK"/>
+                            <constraint firstAttribute="width" constant="12" id="dJw-u4-kPf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NQg-ea-blY" firstAttribute="top" secondItem="wPu-5Y-5AM" secondAttribute="bottom" id="5nr-us-xv5"/>
+                    <constraint firstItem="55B-AX-Niq" firstAttribute="leading" secondItem="wPu-5Y-5AM" secondAttribute="trailing" constant="130" id="813-hD-jBG"/>
+                    <constraint firstAttribute="bottom" secondItem="HDi-Fx-7QK" secondAttribute="bottom" id="Ahe-f4-MhU"/>
+                    <constraint firstAttribute="trailing" secondItem="NQg-ea-blY" secondAttribute="trailing" id="DVn-7O-cNQ"/>
+                    <constraint firstItem="NQg-ea-blY" firstAttribute="leading" secondItem="Ryx-rl-JRb" secondAttribute="leading" id="E4H-oI-efF"/>
+                    <constraint firstItem="NQg-ea-blY" firstAttribute="top" secondItem="55B-AX-Niq" secondAttribute="bottom" id="INa-7z-a3C"/>
+                    <constraint firstAttribute="trailing" secondItem="HDi-Fx-7QK" secondAttribute="trailing" id="J7g-ph-1cq"/>
+                    <constraint firstItem="wPu-5Y-5AM" firstAttribute="top" secondItem="Ryx-rl-JRb" secondAttribute="top" constant="25" id="SlW-UM-fwU"/>
+                    <constraint firstItem="55B-AX-Niq" firstAttribute="top" secondItem="Ryx-rl-JRb" secondAttribute="top" id="Vx3-fv-c6N"/>
+                    <constraint firstItem="wPu-5Y-5AM" firstAttribute="leading" secondItem="Ryx-rl-JRb" secondAttribute="leading" constant="15" id="Yzi-s7-JOy"/>
+                    <constraint firstAttribute="trailing" secondItem="wPu-5Y-5AM" secondAttribute="trailing" constant="200" id="Zg0-0l-kOy"/>
+                    <constraint firstAttribute="trailing" secondItem="55B-AX-Niq" secondAttribute="trailing" id="h4r-MD-wLG"/>
+                    <constraint firstAttribute="bottom" secondItem="NQg-ea-blY" secondAttribute="bottom" constant="10" id="oLS-Kg-MkG"/>
+                    <constraint firstItem="HDi-Fx-7QK" firstAttribute="leading" secondItem="Ryx-rl-JRb" secondAttribute="leading" id="plC-rA-E9e"/>
+                    <constraint firstItem="mo4-uN-8Vm" firstAttribute="top" secondItem="Ryx-rl-JRb" secondAttribute="top" constant="25" id="tiJ-B0-Mmg"/>
+                    <constraint firstAttribute="trailing" secondItem="mo4-uN-8Vm" secondAttribute="trailing" constant="22" id="ylq-bl-DQo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="isAnButton" destination="55B-AX-Niq" id="fLS-sK-qHa"/>
+                <outlet property="isAnImage" destination="mo4-uN-8Vm" id="gV8-90-Qch"/>
+                <outlet property="myCollectionView" destination="NQg-ea-blY" id="cLV-TA-qKF"/>
+                <outlet property="titleLabel" destination="wPu-5Y-5AM" id="vHS-cu-BLk"/>
+            </connections>
+            <point key="canvasLocation" x="-182" y="89"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Hot_Hline" width="1" height="1"/>
+    </resources>
+</document>

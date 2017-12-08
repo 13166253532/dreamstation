@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Inves Cell View Controller-->
+        <scene sceneID="pJj-jP-tRE">
+            <objects>
+                <viewController storyboardIdentifier="DSInvesCellViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HxL-8T-vmA" customClass="DSInvesCellViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D8c-ZD-K38"/>
+                        <viewControllerLayoutGuide type="bottom" id="POv-TU-nEa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zzw-y4-F9j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="JPv-bi-xmM">
+                                <rect key="frame" x="150" y="256" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="7nq-q9-Ilt"/>
+                                    <constraint firstAttribute="width" constant="75" id="euZ-R4-e5W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无匹配的结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyU-yf-KII">
+                                <rect key="frame" x="50" y="341" width="275" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LCk-nR-64U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dyU-yf-KII" firstAttribute="top" secondItem="JPv-bi-xmM" secondAttribute="bottom" constant="10" id="2Fc-T2-3ZU"/>
+                            <constraint firstItem="JPv-bi-xmM" firstAttribute="centerX" secondItem="zzw-y4-F9j" secondAttribute="centerX" id="5VW-7l-XGv"/>
+                            <constraint firstItem="dyU-yf-KII" firstAttribute="leading" secondItem="zzw-y4-F9j" secondAttribute="leading" constant="50" id="7lt-RX-rqL"/>
+                            <constraint firstItem="LCk-nR-64U" firstAttribute="leading" secondItem="zzw-y4-F9j" secondAttribute="leading" id="JGd-IW-bTm"/>
+                            <constraint firstAttribute="bottom" secondItem="LCk-nR-64U" secondAttribute="bottom" constant="50" id="MgG-6A-Iq7"/>
+                            <constraint firstAttribute="trailing" secondItem="dyU-yf-KII" secondAttribute="trailing" constant="50" id="NpE-vd-JSe"/>
+                            <constraint firstItem="JPv-bi-xmM" firstAttribute="centerY" secondItem="zzw-y4-F9j" secondAttribute="centerY" constant="-40" id="caG-cY-jZK"/>
+                            <constraint firstAttribute="trailing" secondItem="LCk-nR-64U" secondAttribute="trailing" id="dTs-jW-MGU"/>
+                            <constraint firstItem="LCk-nR-64U" firstAttribute="top" secondItem="zzw-y4-F9j" secondAttribute="top" id="fyY-U2-31Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="LCk-nR-64U" id="VSU-sy-E29"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqb-6N-u1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

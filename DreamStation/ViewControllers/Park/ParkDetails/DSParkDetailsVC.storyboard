@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Park DetailsVC-->
+        <scene sceneID="jNp-DS-jP5">
+            <objects>
+                <viewController storyboardIdentifier="DSParkDetailsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AIL-av-Xvl" customClass="DSParkDetailsVC" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ak-DA-Vaw"/>
+                        <viewControllerLayoutGuide type="bottom" id="FzH-eZ-S7m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nBw-WE-m4Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSParkDetailsVC" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dNj-tk-O0J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMx-Hc-hfw">
+                                <rect key="frame" x="25" y="624" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OBX-mN-GZO"/>
+                                    <constraint firstAttribute="width" constant="21" id="WxI-B2-b5V"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="collectionBtn:" destination="AIL-av-Xvl" eventType="touchUpInside" id="aHG-VG-4nQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWe-lZ-flP">
+                                <rect key="frame" x="71" y="618" width="304" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="palyBtn:" destination="AIL-av-Xvl" eventType="touchUpInside" id="aFN-DP-Ng2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收藏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jh-ct-vhy">
+                                <rect key="frame" x="14" y="649" width="43" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Qlw-KW-wdg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f1-s6-sL0">
+                                <rect key="frame" x="0.0" y="618" width="71" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="collectionMaxAction:" destination="AIL-av-Xvl" eventType="touchUpInside" id="Z11-qS-CN7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RWe-lZ-flP" firstAttribute="leading" secondItem="3Jh-ct-vhy" secondAttribute="trailing" constant="14" id="Glb-Ll-H3q"/>
+                            <constraint firstItem="3Jh-ct-vhy" firstAttribute="leading" secondItem="nBw-WE-m4Y" secondAttribute="leading" constant="14" id="It9-Ci-QUV"/>
+                            <constraint firstAttribute="trailing" secondItem="dNj-tk-O0J" secondAttribute="trailing" id="Jcy-Nz-pbH"/>
+                            <constraint firstItem="FzH-eZ-S7m" firstAttribute="top" secondItem="RWe-lZ-flP" secondAttribute="bottom" id="K2t-OR-oyb"/>
+                            <constraint firstItem="2f1-s6-sL0" firstAttribute="leading" secondItem="nBw-WE-m4Y" secondAttribute="leading" id="Ljo-3u-2Qv"/>
+                            <constraint firstItem="RWe-lZ-flP" firstAttribute="leading" secondItem="2f1-s6-sL0" secondAttribute="trailing" id="McL-Mb-iC9"/>
+                            <constraint firstItem="QMx-Hc-hfw" firstAttribute="top" secondItem="dNj-tk-O0J" secondAttribute="bottom" constant="6" id="NNz-Ob-l3H"/>
+                            <constraint firstItem="RWe-lZ-flP" firstAttribute="top" secondItem="dNj-tk-O0J" secondAttribute="bottom" id="TlK-PA-m9g"/>
+                            <constraint firstItem="FzH-eZ-S7m" firstAttribute="top" secondItem="2f1-s6-sL0" secondAttribute="bottom" id="ZkL-wR-mfC"/>
+                            <constraint firstAttribute="bottom" secondItem="dNj-tk-O0J" secondAttribute="bottom" constant="49" id="g32-1s-T0Z"/>
+                            <constraint firstItem="dNj-tk-O0J" firstAttribute="leading" secondItem="nBw-WE-m4Y" secondAttribute="leading" id="ggl-g8-UVt"/>
+                            <constraint firstItem="3Jh-ct-vhy" firstAttribute="top" secondItem="QMx-Hc-hfw" secondAttribute="bottom" constant="4" id="hfs-P2-3uu"/>
+                            <constraint firstItem="RWe-lZ-flP" firstAttribute="leading" secondItem="QMx-Hc-hfw" secondAttribute="trailing" constant="25" id="n2d-0L-gNI"/>
+                            <constraint firstAttribute="trailing" secondItem="RWe-lZ-flP" secondAttribute="trailing" id="pSG-R9-OID"/>
+                            <constraint firstItem="dNj-tk-O0J" firstAttribute="top" secondItem="nBw-WE-m4Y" secondAttribute="top" id="sbD-SY-Z4Z"/>
+                            <constraint firstItem="2f1-s6-sL0" firstAttribute="top" secondItem="dNj-tk-O0J" secondAttribute="bottom" id="udl-Ji-ShP"/>
+                            <constraint firstItem="QMx-Hc-hfw" firstAttribute="leading" secondItem="nBw-WE-m4Y" secondAttribute="leading" constant="25" id="wwV-Wg-NK5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionBtn" destination="QMx-Hc-hfw" id="y1G-4X-8CM"/>
+                        <outlet property="collectionMaxBtn" destination="2f1-s6-sL0" id="Epc-nn-dtv"/>
+                        <outlet property="myTableView" destination="dNj-tk-O0J" id="Xcr-rh-cxD"/>
+                        <outlet property="playBtn" destination="RWe-lZ-flP" id="6eh-Or-zAY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Vb-Mn-k5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="200"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

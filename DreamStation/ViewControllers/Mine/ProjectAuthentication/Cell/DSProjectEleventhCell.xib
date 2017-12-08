@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DSProjectEleventhCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otG-Z1-ZSf">
+                        <rect key="frame" x="15" y="13" width="37.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="qik-Uc-MdJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qik-Uc-MdJ"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homePage_biaoji" translatesAutoresizingMaskIntoConstraints="NO" id="lC1-kO-N55">
+                        <rect key="frame" x="53.5" y="13" width="5" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="23J-9K-pNa"/>
+                            <constraint firstAttribute="height" constant="5" id="VCr-MG-bgP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAC-D9-XdV">
+                        <rect key="frame" x="267.5" y="0.0" width="37.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OSb-VK-B1e">
+                        <rect key="frame" x="72.5" y="0.0" width="232.5" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OSb-VK-B1e" secondAttribute="bottom" id="05m-1w-F9O"/>
+                    <constraint firstAttribute="bottom" secondItem="YAC-D9-XdV" secondAttribute="bottom" id="2ct-HK-Kfl"/>
+                    <constraint firstItem="otG-Z1-ZSf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FcP-MO-eJ1"/>
+                    <constraint firstItem="YAC-D9-XdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TG8-5k-9a7"/>
+                    <constraint firstItem="OSb-VK-B1e" firstAttribute="leading" secondItem="otG-Z1-ZSf" secondAttribute="trailing" constant="20" id="Tvc-8L-EM0"/>
+                    <constraint firstItem="otG-Z1-ZSf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VBm-i1-I7H"/>
+                    <constraint firstItem="lC1-kO-N55" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="VT1-08-1E9"/>
+                    <constraint firstItem="OSb-VK-B1e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XmR-sM-wxx"/>
+                    <constraint firstAttribute="bottom" secondItem="otG-Z1-ZSf" secondAttribute="bottom" id="Yg4-JO-pvU"/>
+                    <constraint firstAttribute="trailing" secondItem="YAC-D9-XdV" secondAttribute="trailing" constant="15" id="c90-hQ-ZDi"/>
+                    <constraint firstAttribute="trailing" secondItem="OSb-VK-B1e" secondAttribute="trailing" constant="15" id="jW7-by-PDH"/>
+                    <constraint firstItem="otG-Z1-ZSf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yDQ-jB-vrM"/>
+                    <constraint firstItem="lC1-kO-N55" firstAttribute="leading" secondItem="otG-Z1-ZSf" secondAttribute="trailing" constant="1" id="zUj-DO-WIe"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="VBm-i1-I7H"/>
+                        <exclude reference="Yg4-JO-pvU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="biaojiImage" destination="lC1-kO-N55" id="voj-qf-dlv"/>
+                <outlet property="detailText" destination="OSb-VK-B1e" id="O9H-6n-rPa"/>
+                <outlet property="placeholderLabel" destination="YAC-D9-XdV" id="2bw-Df-oab"/>
+                <outlet property="titleLabel" destination="otG-Z1-ZSf" id="P0H-vj-5Ce"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homePage_biaoji" width="5" height="5"/>
+    </resources>
+</document>

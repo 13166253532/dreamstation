@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>O2O</string>
+	<string>电子商务</string>
+	<string>企业服务</string>
+	<string>互联网金融</string>
+	<string>金融</string>
+	<string>大数据</string>
+	<string>医疗健康</string>
+	<string>游戏</string>
+	<string>节能环保</string>
+	<string>新能源</string>
+	<string>智慧城市</string>
+	<string>汽车</string>
+	<string>交通</string>
+	<string>文化传媒</string>
+	<string>工业4.0</string>
+	<string>新农业</string>
+	<string>房产家居</string>
+	<string>工具软件</string>
+	<string>社交网络</string>
+	<string>广告营销</string>
+	<string>新媒体</string>
+	<string>军工</string>
+	<string>交通运输</string>
+	<string>旅游户外</string>
+	<string>制造升级</string>
+	<string>消费生活</string>
+	<string>教育培训</string>
+	<string>物流</string>
+	<string>虚拟现实</string>
+	<string>体育</string>
+	<string>其他</string>
+</array>
+</plist>

@@ -1,0 +1,9 @@
+/* 
+  DSTitleStrings.strings
+  DreamStation
+
+  Created by QPP on 16/6/15.
+  Copyright © 2016年 QPP. All rights reserved.
+*/
+"DSTitle"="你好";
+"DSLoginTitle"="login";

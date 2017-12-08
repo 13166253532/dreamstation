@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DSScreeningCollectionViewCell" id="iN0-l3-epB" customClass="DSScreeningCollectionViewCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pJn-Li-RAS">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P15-fA-pzh">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pJn-Li-RAS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Tt-vR-8Dr"/>
+                <constraint firstAttribute="trailing" secondItem="pJn-Li-RAS" secondAttribute="trailing" id="Bxm-F7-3zw"/>
+                <constraint firstItem="P15-fA-pzh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HW7-sN-d8Y"/>
+                <constraint firstAttribute="bottom" secondItem="pJn-Li-RAS" secondAttribute="bottom" id="Rbd-7Z-StI"/>
+                <constraint firstItem="P15-fA-pzh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SWq-gT-PRl"/>
+                <constraint firstAttribute="bottom" secondItem="P15-fA-pzh" secondAttribute="bottom" id="U50-Qg-m3p"/>
+                <constraint firstAttribute="trailing" secondItem="P15-fA-pzh" secondAttribute="trailing" id="bU6-kU-hFQ"/>
+                <constraint firstItem="pJn-Li-RAS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eFe-If-5yU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bagImageView" destination="pJn-Li-RAS" id="Wbs-PV-mUf"/>
+                <outlet property="titleLabel" destination="P15-fA-pzh" id="ryT-u8-Upn"/>
+            </connections>
+            <point key="canvasLocation" x="242" y="34"/>
+        </view>
+    </objects>
+</document>

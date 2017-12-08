@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Mine My Interview View Controller-->
+        <scene sceneID="0JI-b9-eJz">
+            <objects>
+                <viewController storyboardIdentifier="DSMineMyInterviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k1g-mO-lhs" customClass="DSMineMyInterviewViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7F0-Dm-YrE"/>
+                        <viewControllerLayoutGuide type="bottom" id="I6v-LC-Q0O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zzc-wG-nEp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tqe-cE-KXB">
+                                <rect key="frame" x="10" y="0.0" width="300" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有约谈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmx-Oo-PRE">
+                                <rect key="frame" x="115" y="303" width="90" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="Lns-Su-vpX">
+                                <rect key="frame" x="125" y="223" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="zpR-AF-JKT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lns-Su-vpX" firstAttribute="top" secondItem="7F0-Dm-YrE" secondAttribute="bottom" constant="203" id="2aP-gt-P5E"/>
+                            <constraint firstItem="Lns-Su-vpX" firstAttribute="centerX" secondItem="zzc-wG-nEp" secondAttribute="centerX" id="BI6-6B-Y2L"/>
+                            <constraint firstAttribute="bottom" secondItem="tqe-cE-KXB" secondAttribute="bottom" id="E58-sb-Z3L"/>
+                            <constraint firstItem="Tmx-Oo-PRE" firstAttribute="centerX" secondItem="zzc-wG-nEp" secondAttribute="centerX" id="UMw-Sa-hRE"/>
+                            <constraint firstItem="Tmx-Oo-PRE" firstAttribute="top" secondItem="Lns-Su-vpX" secondAttribute="bottom" constant="10" id="lGl-gp-myb"/>
+                            <constraint firstAttribute="trailing" secondItem="tqe-cE-KXB" secondAttribute="trailing" constant="10" id="lbt-xW-ErY"/>
+                            <constraint firstItem="tqe-cE-KXB" firstAttribute="top" secondItem="zzc-wG-nEp" secondAttribute="top" id="oFA-vk-RZj"/>
+                            <constraint firstItem="tqe-cE-KXB" firstAttribute="leading" secondItem="zzc-wG-nEp" secondAttribute="leading" constant="10" id="qhe-7R-er4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertImgView" destination="Lns-Su-vpX" id="3nw-Nr-9Dt"/>
+                        <outlet property="alertLab" destination="Tmx-Oo-PRE" id="OJp-TQ-zJK"/>
+                        <outlet property="myTableView" destination="tqe-cE-KXB" id="h4a-hk-s4b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffz-E1-YCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+</document>

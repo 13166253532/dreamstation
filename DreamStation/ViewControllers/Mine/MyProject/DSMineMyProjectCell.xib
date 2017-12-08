@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSMineMyProjectCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DSMineMyProjectCell" rowHeight="67" id="5es-sb-VCY" customClass="DSMineMyProjectCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5es-sb-VCY" id="Nf7-9E-k08">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-ea-9vk">
+                        <rect key="frame" x="15" y="15" width="290" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBN-sG-kRG">
+                        <rect key="frame" x="52" y="44.5" width="253" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="项目：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-JP-C1o">
+                        <rect key="frame" x="15" y="44.5" width="37" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CBN-sG-kRG" firstAttribute="leading" secondItem="8G9-JP-C1o" secondAttribute="trailing" id="K5Y-X2-Ihr"/>
+                    <constraint firstItem="efZ-ea-9vk" firstAttribute="leading" secondItem="Nf7-9E-k08" secondAttribute="leading" constant="15" id="NJf-03-Dkc"/>
+                    <constraint firstItem="8G9-JP-C1o" firstAttribute="leading" secondItem="Nf7-9E-k08" secondAttribute="leading" constant="15" id="QlN-Dj-i3k"/>
+                    <constraint firstItem="8G9-JP-C1o" firstAttribute="top" secondItem="Nf7-9E-k08" secondAttribute="top" constant="44.5" id="Sih-w0-MvW"/>
+                    <constraint firstItem="efZ-ea-9vk" firstAttribute="top" secondItem="Nf7-9E-k08" secondAttribute="top" constant="15" id="UbR-2c-eiT"/>
+                    <constraint firstItem="CBN-sG-kRG" firstAttribute="top" secondItem="efZ-ea-9vk" secondAttribute="bottom" constant="10" id="XyR-K8-VIg"/>
+                    <constraint firstAttribute="trailing" secondItem="CBN-sG-kRG" secondAttribute="trailing" constant="15" id="rUl-2V-er6"/>
+                    <constraint firstAttribute="trailing" secondItem="efZ-ea-9vk" secondAttribute="trailing" constant="15" id="w5D-S7-khP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="companyLabel" destination="efZ-ea-9vk" id="gqU-ta-7dm"/>
+                <outlet property="subLabel" destination="CBN-sG-kRG" id="n4u-3j-170"/>
+            </connections>
+            <point key="canvasLocation" x="218" y="18.5"/>
+        </tableViewCell>
+    </objects>
+</document>

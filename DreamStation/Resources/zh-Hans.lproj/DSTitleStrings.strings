@@ -1,0 +1,43 @@
+/* 
+  DSTitleStrings.strings
+  DreamStation
+
+  Created by QPP on 16/6/15.
+  Copyright © 2016年 QPP. All rights reserved.
+*/
+"DSTitle"="Helloworld";
+"DSLoginTitle"="登录";
+"DSHomePageTitle"="首页";
+"DSInvestorsTitle"="投资方";
+"DSMineTitle"="我的";
+"DSParkTitle"="园区";
+"DSParkMessageTitle"="申请发布园区信息";
+"DSChooseCityTitle" = "选择城市";
+"DSParkDetailsTitle" = "园区详情";
+
+"DSProjectTitle"="项目";
+"DSVideoPlayerTitle" = "节目视频";
+"DSActivityTitle" = "活动";
+"DSMyActivityTitle" = "我的活动";
+"DSActivityDetailTitle" = "活动详情";
+"DSActivityJoinTitle" = "报名";
+
+
+
+"DSResetPasswordTitle" = "重置密码";
+"DSSignUpTitle" = "注册";
+"DSSettingTitle"="设置";
+"DSAboutUsTitle" = "关于我们";
+"DSFeedBackTitle" = "反馈建议";
+"DSChangePassTitle" = "修改密码";
+"MessageTitle" = "消息";
+"DSMessageDetailsTitle" = "详情";
+
+"DSChooseIdentitiesTitle" = "选择投资者身份";
+"DSServiceTitle" = "服务协议";
+
+"DSAgencyTitle" = "创建新的投资机构";
+"DSPersonalTitle" = "输入个人验证信息";
+"DSPersonalInformationTitle" = "输入个人信息";
+
+"DSMyInfomationTitle" = "个人信息";

@@ -1,0 +1,12 @@
+/* 
+  DSProjectViewController.strings
+  DreamStation
+
+  Created by 刘佳斌 on 16/7/28.
+  Copyright © 2016年 QPP. All rights reserved.
+*/
+
+"DSProjectHot" = "热度";
+"DSProjectTime" = "发布时间";
+"DSProjectChoose" = "筛选";
+"DSProjectNoComplete" = "由于您的身份，现在无法完成此操作";

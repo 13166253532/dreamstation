@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="RTO-An-gDh">
+            <objects>
+                <viewController storyboardIdentifier="DSSearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ARB-Yj-yMJ" customClass="DSSearchViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FoT-0B-erm"/>
+                        <viewControllerLayoutGuide type="bottom" id="qpA-h1-C5X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MlS-G6-PJL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eas-ry-UJW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <sections/>
+                            </tableView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7QB-XE-ccA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7QB-XE-ccA" firstAttribute="top" secondItem="FoT-0B-erm" secondAttribute="bottom" id="0rR-ZV-iQ9"/>
+                            <constraint firstItem="7QB-XE-ccA" firstAttribute="leading" secondItem="MlS-G6-PJL" secondAttribute="leading" id="29x-LZ-613"/>
+                            <constraint firstAttribute="trailing" secondItem="eas-ry-UJW" secondAttribute="trailing" id="AK3-Ui-28X"/>
+                            <constraint firstItem="qpA-h1-C5X" firstAttribute="top" secondItem="7QB-XE-ccA" secondAttribute="bottom" id="CYP-qW-DcV"/>
+                            <constraint firstItem="eas-ry-UJW" firstAttribute="leading" secondItem="MlS-G6-PJL" secondAttribute="leading" id="FsY-cN-cCE"/>
+                            <constraint firstItem="qpA-h1-C5X" firstAttribute="top" secondItem="eas-ry-UJW" secondAttribute="bottom" id="Lf2-GC-ll5"/>
+                            <constraint firstItem="eas-ry-UJW" firstAttribute="top" secondItem="MlS-G6-PJL" secondAttribute="top" id="XRb-dV-Ymg"/>
+                            <constraint firstAttribute="trailing" secondItem="7QB-XE-ccA" secondAttribute="trailing" id="abo-Ob-TR1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundView" destination="7QB-XE-ccA" id="wvz-xy-jok"/>
+                        <outlet property="tableView" destination="eas-ry-UJW" id="NYi-ot-VjR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vef-pt-5Fy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="-131"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

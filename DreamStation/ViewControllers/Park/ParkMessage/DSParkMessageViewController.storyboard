@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Park Message View Controller-->
+        <scene sceneID="EFO-rx-kIO">
+            <objects>
+                <viewController storyboardIdentifier="DSParkMessageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fJu-Ny-s4P" customClass="DSParkMessageViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sf3-3a-IKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="eHD-JK-XsW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PeV-G9-4gJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vah-2f-8UF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="3DF-q1-UJm"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfQ-6S-Keq">
+                                <rect key="frame" x="15" y="275" width="345" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="提交" backgroundImage="Park_button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action:" destination="fJu-Ny-s4P" eventType="touchUpInside" id="Prc-bN-6Lg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZfQ-6S-Keq" secondAttribute="trailing" constant="15" id="3D3-SL-Blt"/>
+                            <constraint firstItem="ZfQ-6S-Keq" firstAttribute="top" secondItem="vah-2f-8UF" secondAttribute="bottom" constant="15" id="8Zp-Ss-lgg"/>
+                            <constraint firstAttribute="trailing" secondItem="vah-2f-8UF" secondAttribute="trailing" id="eWl-tP-y39"/>
+                            <constraint firstItem="vah-2f-8UF" firstAttribute="top" secondItem="PeV-G9-4gJ" secondAttribute="top" id="lfL-8C-MZM"/>
+                            <constraint firstItem="vah-2f-8UF" firstAttribute="leading" secondItem="PeV-G9-4gJ" secondAttribute="leading" id="mA0-po-gsA"/>
+                            <constraint firstItem="ZfQ-6S-Keq" firstAttribute="leading" secondItem="PeV-G9-4gJ" secondAttribute="leading" constant="15" id="prG-wx-yQW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="vah-2f-8UF" id="Mjp-eX-JmN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="een-2G-zvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.400000000000006" y="156.19999999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Park_button" width="345" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

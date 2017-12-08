@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Investors View Controller-->
+        <scene sceneID="bh6-He-VPE">
+            <objects>
+                <viewController storyboardIdentifier="DSInvestorsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ksz-qu-En5" customClass="DSInvestorsViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iTj-dP-yj8"/>
+                        <viewControllerLayoutGuide type="bottom" id="a1u-R0-Jid"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HzJ-jM-bbW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjE-K9-Qpp" customClass="HMSegmentedControl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LfC-JC-xUA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-B6-Gx6">
+                                <rect key="frame" x="0.0" y="104" width="375" height="499"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIc-4s-exG">
+                                <rect key="frame" x="250" y="64" width="125" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="r15-UL-qKo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="69" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="筛选" image="Project_arrow_icon">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickFilterBtn:" destination="ksz-qu-En5" eventType="touchUpInside" id="w6d-Z4-eED"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Project_fenge" translatesAutoresizingMaskIntoConstraints="NO" id="kF3-57-B7B">
+                                <rect key="frame" x="0.0" y="104" width="375" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="fCF-Vu-OJw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kF3-57-B7B" secondAttribute="trailing" id="3zT-HI-Ix3"/>
+                            <constraint firstItem="cIc-4s-exG" firstAttribute="width" secondItem="WjE-K9-Qpp" secondAttribute="width" multiplier="1:3" id="5IB-7a-bPx"/>
+                            <constraint firstAttribute="trailing" secondItem="WjE-K9-Qpp" secondAttribute="trailing" id="7wU-LK-O4v"/>
+                            <constraint firstItem="Boq-B6-Gx6" firstAttribute="top" secondItem="WjE-K9-Qpp" secondAttribute="bottom" id="IA0-Pm-TBL"/>
+                            <constraint firstAttribute="trailing" secondItem="cIc-4s-exG" secondAttribute="trailing" id="ZWa-rm-IZ2"/>
+                            <constraint firstAttribute="bottom" secondItem="Boq-B6-Gx6" secondAttribute="bottom" constant="64" id="gDH-Nx-o0r"/>
+                            <constraint firstAttribute="trailing" secondItem="Boq-B6-Gx6" secondAttribute="trailing" id="ijL-km-X77"/>
+                            <constraint firstItem="kF3-57-B7B" firstAttribute="leading" secondItem="HzJ-jM-bbW" secondAttribute="leading" id="jFh-oh-eXT"/>
+                            <constraint firstItem="WjE-K9-Qpp" firstAttribute="top" secondItem="HzJ-jM-bbW" secondAttribute="top" constant="64" id="oMy-cD-IGb"/>
+                            <constraint firstItem="WjE-K9-Qpp" firstAttribute="leading" secondItem="HzJ-jM-bbW" secondAttribute="leading" id="pbh-mO-Vfw"/>
+                            <constraint firstItem="cIc-4s-exG" firstAttribute="top" secondItem="HzJ-jM-bbW" secondAttribute="top" constant="64" id="wXu-eo-S2w"/>
+                            <constraint firstItem="kF3-57-B7B" firstAttribute="top" secondItem="cIc-4s-exG" secondAttribute="bottom" id="wuv-mD-O3v"/>
+                            <constraint firstItem="Boq-B6-Gx6" firstAttribute="leading" secondItem="HzJ-jM-bbW" secondAttribute="leading" id="xsf-2t-aqa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="Boq-B6-Gx6" id="pjT-TU-k5G"/>
+                        <outlet property="belowLayoutConstraint" destination="gDH-Nx-o0r" id="Cqy-Q6-mDS"/>
+                        <outlet property="filterBtn" destination="cIc-4s-exG" id="wxb-yX-1ye"/>
+                        <outlet property="segment" destination="WjE-K9-Qpp" id="tP2-RH-FJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUd-ma-vpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253" y="-90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Project_arrow_icon" width="8" height="4"/>
+        <image name="Project_fenge" width="1" height="1"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

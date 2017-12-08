@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Per Inves Details View Controller-->
+        <scene sceneID="m1w-l9-hjF">
+            <objects>
+                <viewController storyboardIdentifier="DSPerInvesDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dpI-99-XT1" customClass="DSPerInvesDetailsViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vzg-dV-rNS"/>
+                        <viewControllerLayoutGuide type="bottom" id="6dD-UU-1OE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zVi-Ba-t9J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-gK-pT2">
+                                <rect key="frame" x="0.0" y="-64" width="375" height="682"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arv-aJ-R3k">
+                                <rect key="frame" x="75" y="618" width="300" height="49"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="followBtn:" destination="dpI-99-XT1" eventType="touchUpInside" id="gCL-pc-XFD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skD-yp-20G">
+                                <rect key="frame" x="0.0" y="618" width="75" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="RtP-hA-3ry"/>
+                                    <constraint firstAttribute="width" constant="75" id="Xwe-bk-ELZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="-19" minY="25" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="26" minY="0.0" maxX="0.0" maxY="13"/>
+                                <state key="normal" title="收藏" image="Hot_ weishoucang">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="collectionMaxAction:" destination="dpI-99-XT1" eventType="touchUpInside" id="v3z-dU-W6I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Arv-aJ-R3k" firstAttribute="leading" secondItem="skD-yp-20G" secondAttribute="trailing" id="1Jm-kM-3M5"/>
+                            <constraint firstAttribute="bottom" secondItem="BeV-gK-pT2" secondAttribute="bottom" constant="49" id="25M-h8-swz"/>
+                            <constraint firstAttribute="bottom" secondItem="skD-yp-20G" secondAttribute="bottom" id="2ti-Jm-Fkf"/>
+                            <constraint firstAttribute="trailing" secondItem="BeV-gK-pT2" secondAttribute="trailing" id="4bP-nS-udB"/>
+                            <constraint firstItem="BeV-gK-pT2" firstAttribute="leading" secondItem="zVi-Ba-t9J" secondAttribute="leading" id="CgF-wT-DEP"/>
+                            <constraint firstItem="skD-yp-20G" firstAttribute="leading" secondItem="zVi-Ba-t9J" secondAttribute="leading" id="IRY-2B-l2t"/>
+                            <constraint firstItem="BeV-gK-pT2" firstAttribute="top" secondItem="zVi-Ba-t9J" secondAttribute="top" constant="-64" id="b8K-yO-Vir"/>
+                            <constraint firstItem="Arv-aJ-R3k" firstAttribute="top" secondItem="BeV-gK-pT2" secondAttribute="bottom" id="bVw-m3-XR0"/>
+                            <constraint firstAttribute="bottom" secondItem="Arv-aJ-R3k" secondAttribute="bottom" id="g1G-Ig-4JF"/>
+                            <constraint firstAttribute="trailing" secondItem="Arv-aJ-R3k" secondAttribute="trailing" id="x1N-Qu-5vC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionMaxBtn" destination="skD-yp-20G" id="yXa-nG-Nf9"/>
+                        <outlet property="followBtn" destination="Arv-aJ-R3k" id="Iih-P6-btt"/>
+                        <outlet property="myTableView" destination="BeV-gK-pT2" id="d0b-7a-ryT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljw-J1-QLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.5" y="213.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hot_ weishoucang" width="22" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

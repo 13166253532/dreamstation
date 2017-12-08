@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="44" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYC-7z-9qZ">
+                    <rect key="frame" x="8" y="8" width="28" height="19"/>
+                    <state key="normal" backgroundImage="Hot_fanhui"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.098039215686274508" green="0.61176470588235299" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sYC-7z-9qZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="4c8-Fq-vc6"/>
+                <constraint firstAttribute="trailing" secondItem="sYC-7z-9qZ" secondAttribute="trailing" constant="8" id="Bmc-cV-7mr"/>
+                <constraint firstAttribute="bottom" secondItem="sYC-7z-9qZ" secondAttribute="bottom" constant="8" id="fGV-Ts-C9V"/>
+                <constraint firstItem="sYC-7z-9qZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qM1-YO-1B0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="208" y="25.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Hot_fanhui" width="12" height="22"/>
+    </resources>
+</document>

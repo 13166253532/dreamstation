@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSInvesDetailsPartnerCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSInvesDetailsPartnerCell" rowHeight="145" id="ciG-di-8Ig" customClass="DSInvesDetailsPartnerCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciG-di-8Ig" id="xGP-nx-UNB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-sg-9on">
+                        <rect key="frame" x="76" y="20" width="94" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDN-aG-IXk">
+                        <rect key="frame" x="76" y="46" width="94" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opz-eF-xMC">
+                        <rect key="frame" x="15" y="66" width="290" height="68"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="asv-Xw-JHL">
+                        <rect key="frame" x="14" y="12" width="52" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="7ui-jU-A0T"/>
+                            <constraint firstAttribute="height" constant="52" id="amE-bK-gPd"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Project_fenge" translatesAutoresizingMaskIntoConstraints="NO" id="5PQ-Hq-Mrr">
+                        <rect key="frame" x="0.0" y="143.5" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="51e-5b-cn8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5PQ-Hq-Mrr" firstAttribute="leading" secondItem="xGP-nx-UNB" secondAttribute="leading" id="3ok-ju-pOf"/>
+                    <constraint firstAttribute="bottom" secondItem="Opz-eF-xMC" secondAttribute="bottom" constant="10" id="5JB-n4-w7H"/>
+                    <constraint firstAttribute="trailing" secondItem="WDN-aG-IXk" secondAttribute="trailing" constant="150" id="8FO-nq-JiZ"/>
+                    <constraint firstItem="asv-Xw-JHL" firstAttribute="top" secondItem="xGP-nx-UNB" secondAttribute="topMargin" constant="4" id="MoO-V0-PIS"/>
+                    <constraint firstItem="WDN-aG-IXk" firstAttribute="leading" secondItem="asv-Xw-JHL" secondAttribute="trailing" constant="10" id="Nhw-Kw-WH7"/>
+                    <constraint firstAttribute="trailing" secondItem="Opz-eF-xMC" secondAttribute="trailing" constant="15" id="QVP-FO-7qj"/>
+                    <constraint firstItem="asv-Xw-JHL" firstAttribute="leading" secondItem="xGP-nx-UNB" secondAttribute="leadingMargin" constant="6" id="S9i-KR-S2d"/>
+                    <constraint firstItem="Opz-eF-xMC" firstAttribute="top" secondItem="asv-Xw-JHL" secondAttribute="bottom" constant="2" id="Say-4Q-bla"/>
+                    <constraint firstAttribute="trailing" secondItem="nHf-sg-9on" secondAttribute="trailing" constant="150" id="TYA-Fh-brf"/>
+                    <constraint firstItem="nHf-sg-9on" firstAttribute="leading" secondItem="asv-Xw-JHL" secondAttribute="trailing" constant="10" id="dzs-a5-Lmq"/>
+                    <constraint firstAttribute="trailing" secondItem="5PQ-Hq-Mrr" secondAttribute="trailing" id="hQF-UO-v5E"/>
+                    <constraint firstItem="WDN-aG-IXk" firstAttribute="top" secondItem="nHf-sg-9on" secondAttribute="bottom" constant="8" id="iZo-u1-Ebv"/>
+                    <constraint firstItem="nHf-sg-9on" firstAttribute="top" secondItem="xGP-nx-UNB" secondAttribute="top" constant="20" id="j96-Ty-9Z7"/>
+                    <constraint firstItem="Opz-eF-xMC" firstAttribute="leading" secondItem="xGP-nx-UNB" secondAttribute="leading" constant="15" id="xOj-n3-Amk"/>
+                    <constraint firstAttribute="bottom" secondItem="5PQ-Hq-Mrr" secondAttribute="bottom" id="yja-mO-f51"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageView" destination="asv-Xw-JHL" id="SvM-4F-Gux"/>
+                <outlet property="introduceLabel" destination="Opz-eF-xMC" id="vqK-bf-fIF"/>
+                <outlet property="nameLabel" destination="nHf-sg-9on" id="pVX-pE-xXe"/>
+                <outlet property="positionLabel" destination="WDN-aG-IXk" id="MyT-gO-gLw"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="65"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Project_fenge" width="1" height="1"/>
+    </resources>
+</document>

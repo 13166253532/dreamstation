@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DSIdSegmentControl" id="iN0-l3-epB" customClass="DSIdSegmentControl" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dMq-qe-dHq">
+                    <rect key="frame" x="0.0" y="0.0" width="165" height="46"/>
+                    <segments>
+                        <segment title="投资机构"/>
+                        <segment title="个人投资者"/>
+                    </segments>
+                    <connections>
+                        <action selector="action:" destination="iN0-l3-epB" eventType="valueChanged" id="YhM-F7-I9U"/>
+                    </connections>
+                </segmentedControl>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uVm-Nj-8Kv">
+                    <rect key="frame" x="0.0" y="42" width="85" height="3"/>
+                    <color key="backgroundColor" red="0.55686274509803924" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="xMn-Bz-MaW"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wDE-rT-Uwt">
+                    <rect key="frame" x="80" y="42" width="85" height="3"/>
+                    <color key="backgroundColor" red="0.55686274509803924" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="m9Q-dJ-AUb"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.098039215686274508" green="0.61176470588235299" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wDE-rT-Uwt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="80" id="0Da-VU-4iq"/>
+                <constraint firstItem="dMq-qe-dHq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6wE-9Q-t21"/>
+                <constraint firstAttribute="trailing" secondItem="wDE-rT-Uwt" secondAttribute="trailing" id="77d-jU-Adh"/>
+                <constraint firstAttribute="bottom" secondItem="uVm-Nj-8Kv" secondAttribute="bottom" id="OT5-vT-GbW"/>
+                <constraint firstAttribute="trailing" secondItem="dMq-qe-dHq" secondAttribute="trailing" id="YbT-q7-gl4"/>
+                <constraint firstAttribute="bottom" secondItem="dMq-qe-dHq" secondAttribute="bottom" id="cT7-Es-n1H"/>
+                <constraint firstAttribute="trailing" secondItem="uVm-Nj-8Kv" secondAttribute="trailing" constant="80" id="dY8-of-Ijh"/>
+                <constraint firstAttribute="bottom" secondItem="wDE-rT-Uwt" secondAttribute="bottom" id="ecZ-FI-xN3"/>
+                <constraint firstItem="dMq-qe-dHq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lix-1m-g6j"/>
+                <constraint firstItem="uVm-Nj-8Kv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wle-S3-l4a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="idSegment" destination="dMq-qe-dHq" id="kxv-41-lw3"/>
+                <outlet property="investorsImage" destination="uVm-Nj-8Kv" id="Ief-yH-wyC"/>
+                <outlet property="perImage" destination="wDE-rT-Uwt" id="blK-Y9-k4i"/>
+            </connections>
+            <point key="canvasLocation" x="259.5" y="105"/>
+        </view>
+    </objects>
+</document>

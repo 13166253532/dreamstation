@@ -1,0 +1,91 @@
+//
+//  DSHttpApplyAccountChangeCmd.h
+//  DreamStation
+//
+//  Created by 刘佳斌 on 16/8/31.
+//  Copyright © 2016年 QPP. All rights reserved.
+//
+
+#import "SNHttpBasePutCmd.h"
+
+@interface DSHttpApplyAccountChangeCmd : SNHttpBasePutCmd
++ (HttpCommand *)httpCommandWithVersion:(NSString *)version;
+@end
+
+extern NSString *const kHttpParamKey_ApplyAccountChange_user_id;
+extern NSString *const kHttpParamKey_ApplyAccountChange_role_name;
+extern NSString *const kHttpParamKey_ApplyAccountChange_applyLogin;
+
+extern NSString *const kHttpParamKey_ApplyAccountChange_id;
+extern NSString *const kHttpParamKey_ApplyAccountChange_provider;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institutionCreator;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual;
+extern NSString *const kHttpParamKey_ApplyAccountChange_login;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institutioner;
+extern NSString *const kHttpParamKey_ApplyAccountChange_authorized;
+extern NSString *const kHttpParamKey_ApplyAccountChange_avatar;
+extern NSString *const kHttpParamKey_ApplyAccountChange_createTime;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution;
+extern NSString *const kHttpParamKey_ApplyAccountChange_role;
+extern NSString *const kHttpParamKey_ApplyAccountChange_park;
+extern NSString *const kHttpParamKey_ApplyAccountChange_truthRole;
+extern NSString *const kHttpParamKey_ApplyAccountChange_name;
+
+
+//个人投资者
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_pv;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_videoUrl;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_videoTitle;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_videoImage;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_phone;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_introduction;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_investMin;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_wechat;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_linkedIn;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_cardNo;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_cardNoBack;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_personalAssetsCertificate;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_investMax;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_cases;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_popular;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_createTime;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_cardNoFront;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_cats;
+
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_cats_name;
+extern NSString *const kHttpParamKey_ApplyAccountChange_individual_cats_description;
+
+
+//
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_id;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_name;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_introduction;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_cases;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_wechat;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_linkedin;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_avatar;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_card_no;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_idCardFrontUrl;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_idCardBackUrl;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_individualPropertyUrl;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_investMin;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_investMax;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_cats;
+
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_company;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_logo;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_licence;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_phone;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_mail;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_address;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_homePage;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_companyInvestMax;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_companyInvestMin;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_job;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_mobilePhone;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_individualMail;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_bussinessCard;
+
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_cats_catName;
+extern NSString *const kHttpParamKey_ApplyAccountChange_institution_cats_description;
+

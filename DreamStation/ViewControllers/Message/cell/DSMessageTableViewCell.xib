@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSMessageBriefTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DSMessageTableViewCell" rowHeight="97" id="K1o-QL-RVc" customClass="DSMessageTableViewCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K1o-QL-RVc" id="Tog-SE-maw">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuJ-ZL-3VZ">
+                        <rect key="frame" x="15" y="40" width="290" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIu-qP-wQD">
+                        <rect key="frame" x="15" y="12" width="290" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Project_fenge" translatesAutoresizingMaskIntoConstraints="NO" id="Wzq-PT-YkM">
+                        <rect key="frame" x="15" y="65" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.72834578800000005" green="0.72834578800000005" blue="0.72834578800000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="CKe-8O-bEk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDb-h8-00t">
+                        <rect key="frame" x="15" y="76" width="33" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="message_remind" translatesAutoresizingMaskIntoConstraints="NO" id="XWh-uq-iEA">
+                        <rect key="frame" x="285" y="79" width="5" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="5QJ-I9-Ite"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5QJ-I9-Ite"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Project_cell" translatesAutoresizingMaskIntoConstraints="NO" id="Tti-ns-3Jx">
+                        <rect key="frame" x="298" y="76" width="7" height="12"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="RuJ-ZL-3VZ" secondAttribute="trailing" constant="15" id="0R8-Ju-FZa"/>
+                    <constraint firstItem="XWh-uq-iEA" firstAttribute="top" secondItem="Wzq-PT-YkM" secondAttribute="bottom" constant="13" id="4Bc-cv-gxV"/>
+                    <constraint firstItem="GDb-h8-00t" firstAttribute="top" secondItem="Wzq-PT-YkM" secondAttribute="bottom" constant="10" id="7Lv-6v-G1d"/>
+                    <constraint firstItem="XWh-uq-iEA" firstAttribute="leading" secondItem="GDb-h8-00t" secondAttribute="trailing" constant="215" id="7ud-Rf-aBC"/>
+                    <constraint firstItem="Wzq-PT-YkM" firstAttribute="leading" secondItem="Tog-SE-maw" secondAttribute="leading" constant="15" id="C66-7h-pMz"/>
+                    <constraint firstItem="Tti-ns-3Jx" firstAttribute="top" secondItem="Wzq-PT-YkM" secondAttribute="bottom" constant="10" id="E8d-C2-VSB"/>
+                    <constraint firstItem="Tti-ns-3Jx" firstAttribute="leading" secondItem="XWh-uq-iEA" secondAttribute="trailing" constant="5" id="Ey1-GQ-yTl"/>
+                    <constraint firstAttribute="trailing" secondItem="Tti-ns-3Jx" secondAttribute="trailing" constant="33" id="Gvj-sf-uow"/>
+                    <constraint firstItem="GDb-h8-00t" firstAttribute="leading" secondItem="Tog-SE-maw" secondAttribute="leading" constant="15" id="JuD-K7-pnw"/>
+                    <constraint firstAttribute="trailing" secondItem="GDb-h8-00t" secondAttribute="trailing" constant="245" id="Kg3-8S-3aq"/>
+                    <constraint firstItem="RuJ-ZL-3VZ" firstAttribute="leading" secondItem="Tog-SE-maw" secondAttribute="leading" constant="15" id="MuM-p6-SaI"/>
+                    <constraint firstAttribute="trailing" secondItem="dIu-qP-wQD" secondAttribute="trailing" constant="15" id="OMZ-f1-NV3"/>
+                    <constraint firstItem="dIu-qP-wQD" firstAttribute="leading" secondItem="Tog-SE-maw" secondAttribute="leading" constant="15" id="P1m-7n-caZ"/>
+                    <constraint firstAttribute="bottom" secondItem="GDb-h8-00t" secondAttribute="bottom" constant="12" id="YfD-NL-BVU"/>
+                    <constraint firstAttribute="trailing" secondItem="Wzq-PT-YkM" secondAttribute="trailing" id="ic7-PB-lvz"/>
+                    <constraint firstItem="Wzq-PT-YkM" firstAttribute="top" secondItem="Tog-SE-maw" secondAttribute="top" constant="65" id="pwx-Ew-m2O"/>
+                    <constraint firstAttribute="trailing" secondItem="Tti-ns-3Jx" secondAttribute="trailing" constant="15" id="qQ0-bw-Gba"/>
+                    <constraint firstItem="dIu-qP-wQD" firstAttribute="top" secondItem="Tog-SE-maw" secondAttribute="top" constant="12" id="tMt-Pk-j9v"/>
+                    <constraint firstItem="Tti-ns-3Jx" firstAttribute="leading" secondItem="XWh-uq-iEA" secondAttribute="trailing" constant="8" id="vpz-Ya-w3U"/>
+                    <constraint firstItem="RuJ-ZL-3VZ" firstAttribute="top" secondItem="dIu-qP-wQD" secondAttribute="bottom" constant="8" id="xsN-UG-CQm"/>
+                    <constraint firstItem="Tti-ns-3Jx" firstAttribute="leading" secondItem="XWh-uq-iEA" secondAttribute="trailing" constant="5" id="ygj-Qz-jYY"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Kg3-8S-3aq"/>
+                        <exclude reference="7ud-Rf-aBC"/>
+                        <exclude reference="Ey1-GQ-yTl"/>
+                        <exclude reference="Gvj-sf-uow"/>
+                        <exclude reference="ygj-Qz-jYY"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="detailLab" destination="GDb-h8-00t" id="unb-yY-yc0"/>
+                <outlet property="redImage" destination="XWh-uq-iEA" id="xyF-gq-BW7"/>
+                <outlet property="subLabel" destination="RuJ-ZL-3VZ" id="MiJ-76-8WN"/>
+                <outlet property="titleLabel" destination="dIu-qP-wQD" id="cfY-oa-MNO"/>
+            </connections>
+            <point key="canvasLocation" x="85" y="65"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Project_cell" width="7" height="12"/>
+        <image name="Project_fenge" width="1" height="1"/>
+        <image name="message_remind" width="5" height="5"/>
+    </resources>
+</document>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DSInverStorsAuthenticationCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="285"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2T-kd-npO">
+                        <rect key="frame" x="15" y="15" width="290" height="120"/>
+                        <state key="normal" backgroundImage="Authentication_xuanBG"/>
+                        <connections>
+                            <action selector="btnOfClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MaI-j3-i3w"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Authentication_jigou" translatesAutoresizingMaskIntoConstraints="NO" id="XvW-Q6-j80">
+                        <rect key="frame" x="30" y="40" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Oz3-R8-mA8"/>
+                            <constraint firstAttribute="width" constant="70" id="Yvg-KW-96F"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投资机构" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-xP-6tn">
+                        <rect key="frame" x="115" y="53" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="Lho-DD-og9"/>
+                            <constraint firstAttribute="height" constant="21" id="Pps-iC-ToF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="机构投资者需要先创建投资机构" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rn-tU-bh9">
+                        <rect key="frame" x="115" y="82" width="188" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1fw-GV-zy6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Authentication_btnStatus" translatesAutoresizingMaskIntoConstraints="NO" id="o5q-4h-jkV">
+                        <rect key="frame" x="270" y="201" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="hPZ-72-nJj"/>
+                            <constraint firstAttribute="height" constant="20" id="qfl-aB-reF"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu4-tA-ckM">
+                        <rect key="frame" x="15" y="150" width="290" height="119.5"/>
+                        <state key="normal" backgroundImage="Authentication_weixuanBG"/>
+                        <connections>
+                            <action selector="btnOfClick2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4GQ-qi-jQC"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Authentication_geren" translatesAutoresizingMaskIntoConstraints="NO" id="B9l-sR-S4U">
+                        <rect key="frame" x="30" y="174" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Wra-oM-GiT"/>
+                            <constraint firstAttribute="height" constant="70" id="ZTM-Ss-8CC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人投资者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-ad-pgg">
+                        <rect key="frame" x="115" y="198" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="HaL-Ap-nld"/>
+                            <constraint firstAttribute="width" constant="120" id="Y4b-RJ-dlw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Authentication_btnStatus" translatesAutoresizingMaskIntoConstraints="NO" id="lqQ-bM-joL">
+                        <rect key="frame" x="270" y="199" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="ITe-ND-upB"/>
+                            <constraint firstAttribute="height" constant="20" id="jq3-Ab-x2M"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Authentication_btnStatus" translatesAutoresizingMaskIntoConstraints="NO" id="Pqh-5D-jec">
+                        <rect key="frame" x="270" y="65" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6AC-N9-BRQ"/>
+                            <constraint firstAttribute="width" constant="20" id="HV4-7l-5jZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="o5q-4h-jkV" secondAttribute="trailing" constant="30" id="00P-y4-ipN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="o5q-4h-jkV" secondAttribute="bottom" constant="55" id="2QA-fg-GHn"/>
+                    <constraint firstAttribute="trailing" secondItem="Vu4-tA-ckM" secondAttribute="trailing" constant="15" id="2RY-mM-o9O"/>
+                    <constraint firstItem="N2T-kd-npO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4OC-hT-OKv"/>
+                    <constraint firstAttribute="trailing" secondItem="Pqh-5D-jec" secondAttribute="trailing" constant="30" id="4P2-fS-ZTx"/>
+                    <constraint firstItem="6rn-tU-bh9" firstAttribute="top" secondItem="wbo-xP-6tn" secondAttribute="bottom" constant="8" id="4d0-j5-XBP"/>
+                    <constraint firstAttribute="trailing" secondItem="lqQ-bM-joL" secondAttribute="trailing" constant="30" id="72x-CW-0Ym"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="o5q-4h-jkV" secondAttribute="trailing" constant="30" id="8SL-RR-PCO"/>
+                    <constraint firstItem="Pqh-5D-jec" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="65" id="I0w-rW-4qX"/>
+                    <constraint firstItem="wbo-xP-6tn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="53" id="K0i-k6-jP8"/>
+                    <constraint firstAttribute="bottom" secondItem="lqQ-bM-joL" secondAttribute="bottom" constant="65" id="QfP-1k-fx1"/>
+                    <constraint firstAttribute="trailing" secondItem="N2T-kd-npO" secondAttribute="trailing" constant="15" id="RJ7-YW-T8R"/>
+                    <constraint firstItem="XvW-Q6-j80" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="S9Y-qI-oNI"/>
+                    <constraint firstItem="wbo-xP-6tn" firstAttribute="leading" secondItem="XvW-Q6-j80" secondAttribute="trailing" constant="15" id="SJ3-T6-WX1"/>
+                    <constraint firstItem="N2T-kd-npO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="WNt-TH-qnz"/>
+                    <constraint firstItem="6rn-tU-bh9" firstAttribute="leading" secondItem="XvW-Q6-j80" secondAttribute="trailing" constant="15" id="Yjx-FF-EPc"/>
+                    <constraint firstAttribute="bottom" secondItem="rJj-ad-pgg" secondAttribute="bottom" constant="65" id="aGX-7n-exP"/>
+                    <constraint firstItem="rJj-ad-pgg" firstAttribute="leading" secondItem="B9l-sR-S4U" secondAttribute="trailing" constant="15" id="b6W-PD-AdT"/>
+                    <constraint firstAttribute="trailing" secondItem="6rn-tU-bh9" secondAttribute="trailing" constant="17" id="bJ3-Rh-71M"/>
+                    <constraint firstAttribute="bottom" secondItem="B9l-sR-S4U" secondAttribute="bottom" constant="40" id="fJE-RE-vk9"/>
+                    <constraint firstItem="Vu4-tA-ckM" firstAttribute="top" secondItem="N2T-kd-npO" secondAttribute="bottom" constant="15" id="hW7-bx-TBS"/>
+                    <constraint firstAttribute="bottom" secondItem="Vu4-tA-ckM" secondAttribute="bottom" constant="15" id="qEw-LJ-N6y"/>
+                    <constraint firstItem="XvW-Q6-j80" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="vA8-G9-gC8"/>
+                    <constraint firstItem="B9l-sR-S4U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="x5H-yQ-onz"/>
+                    <constraint firstItem="Vu4-tA-ckM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yUE-jL-9nc"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="8SL-RR-PCO"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BGBtn" destination="N2T-kd-npO" id="Al9-ej-Am1"/>
+                <outlet property="BGBtn2" destination="Vu4-tA-ckM" id="fkU-sn-7Rf"/>
+                <outlet property="detailLabel" destination="6rn-tU-bh9" id="9LR-nD-6jb"/>
+                <outlet property="roleImage" destination="XvW-Q6-j80" id="KhP-yO-H5m"/>
+                <outlet property="statusImage" destination="Pqh-5D-jec" id="OjC-c2-X8Q"/>
+                <outlet property="statusImage2" destination="lqQ-bM-joL" id="wib-W6-pFH"/>
+                <outlet property="titleLabel" destination="wbo-xP-6tn" id="1cU-3i-whl"/>
+                <outlet property="titleLabel2" destination="rJj-ad-pgg" id="5qE-AW-HzH"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="200.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Authentication_btnStatus" width="21" height="21"/>
+        <image name="Authentication_geren" width="70" height="70"/>
+        <image name="Authentication_jigou" width="70" height="70"/>
+        <image name="Authentication_weixuanBG" width="345" height="120"/>
+        <image name="Authentication_xuanBG" width="345" height="120"/>
+    </resources>
+</document>

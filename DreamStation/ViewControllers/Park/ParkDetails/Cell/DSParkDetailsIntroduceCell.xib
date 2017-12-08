@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSParkDetailsIntroduceCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSParkDetailsIntroduceCell" rowHeight="320" id="67w-xr-CDO" customClass="DSParkDetailsIntroduceCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="67w-xr-CDO" id="WGg-J3-Zm1">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-z7-CdO">
+                        <rect key="frame" x="15" y="0.0" width="290" height="67.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS4-ap-bF7">
+                        <rect key="frame" x="275" y="69" width="30" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="t3e-GN-Pwv"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleColor" red="0.13333333333333333" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="action:" destination="67w-xr-CDO" eventType="touchUpInside" id="t1V-eg-Gvh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fWY-z7-CdO" secondAttribute="bottom" constant="32" id="Es1-3q-MrS"/>
+                    <constraint firstItem="fWY-z7-CdO" firstAttribute="leading" secondItem="WGg-J3-Zm1" secondAttribute="leading" constant="15" id="NT1-Oi-4Yn"/>
+                    <constraint firstAttribute="trailing" secondItem="fWY-z7-CdO" secondAttribute="trailing" constant="15" id="UIs-cD-tB6"/>
+                    <constraint firstItem="fWY-z7-CdO" firstAttribute="top" secondItem="WGg-J3-Zm1" secondAttribute="top" id="bnm-YC-FmP"/>
+                    <constraint firstAttribute="bottom" secondItem="cS4-ap-bF7" secondAttribute="bottom" constant="15" id="sXn-pm-mwH"/>
+                    <constraint firstAttribute="trailing" secondItem="cS4-ap-bF7" secondAttribute="trailing" constant="15" id="ySc-I3-Yhi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moreButton" destination="cS4-ap-bF7" id="xUQ-pZ-4r5"/>
+                <outlet property="parkLabel" destination="fWY-z7-CdO" id="ucc-FB-cUJ"/>
+                <outlet property="titleBottomLine" destination="Es1-3q-MrS" id="pae-VI-ddv"/>
+            </connections>
+            <point key="canvasLocation" x="-84" y="192"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="P0V-iN-SLC">
+            <objects>
+                <viewController storyboardIdentifier="DSSignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dhe-2b-3I3" customClass="DSSignUpViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9iY-HV-sfR"/>
+                        <viewControllerLayoutGuide type="bottom" id="hzd-cU-zo9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ep9-Dg-vRK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ces-Cm-QyA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="267"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="267" id="UVs-ti-JKD"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjv-cc-a8g">
+                                <rect key="frame" x="15" y="302" width="345" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wGx-66-ajb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="注册" backgroundImage="baseBtn_Bg">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpOfClick:" destination="dhe-2b-3I3" eventType="touchUpInside" id="lnf-xD-VXY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fjv-cc-a8g" firstAttribute="leading" secondItem="Ep9-Dg-vRK" secondAttribute="leading" constant="15" id="5oX-FP-LPA"/>
+                            <constraint firstItem="ces-Cm-QyA" firstAttribute="leading" secondItem="Ep9-Dg-vRK" secondAttribute="leading" id="Csn-3e-ttS"/>
+                            <constraint firstAttribute="trailing" secondItem="Fjv-cc-a8g" secondAttribute="trailing" constant="15" id="OXe-8m-O0I"/>
+                            <constraint firstItem="Fjv-cc-a8g" firstAttribute="top" secondItem="ces-Cm-QyA" secondAttribute="bottom" constant="15" id="cK6-FG-100"/>
+                            <constraint firstItem="ces-Cm-QyA" firstAttribute="top" secondItem="9iY-HV-sfR" secondAttribute="bottom" id="eWc-AA-9gO"/>
+                            <constraint firstAttribute="trailing" secondItem="ces-Cm-QyA" secondAttribute="trailing" id="iOm-bL-PoX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signUpBtn" destination="Fjv-cc-a8g" id="fFQ-Ce-FfW"/>
+                        <outlet property="signUpTableView" destination="ces-Cm-QyA" id="FZy-LG-KmW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CgL-b3-UZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151.19999999999999" y="239.27000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseBtn_Bg" width="345" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

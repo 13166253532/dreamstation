@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="NKJ-7B-xOr">
+            <objects>
+                <viewController storyboardIdentifier="DSCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pZN-bJ-Ug6" customClass="DSCollectionViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ek-WS-kvd"/>
+                        <viewControllerLayoutGuide type="bottom" id="qob-Rc-zNY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="neS-oh-8pp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="bd1-aP-DS8">
+                                <rect key="frame" x="150" y="205" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Sfo-7H-9gv"/>
+                                    <constraint firstAttribute="width" constant="75" id="cBv-o2-7M4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有收藏任何内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omu-ss-iPm">
+                                <rect key="frame" x="0.0" y="295" width="375" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wen-PP-Atv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bd1-aP-DS8" firstAttribute="centerX" secondItem="neS-oh-8pp" secondAttribute="centerX" id="13z-AB-UGE"/>
+                            <constraint firstItem="bd1-aP-DS8" firstAttribute="top" secondItem="4ek-WS-kvd" secondAttribute="bottom" constant="185" id="3cw-uw-NLi"/>
+                            <constraint firstAttribute="trailing" secondItem="omu-ss-iPm" secondAttribute="trailing" id="Ape-7u-fW4"/>
+                            <constraint firstAttribute="bottom" secondItem="wen-PP-Atv" secondAttribute="bottom" id="L5n-uJ-Z0L"/>
+                            <constraint firstAttribute="trailing" secondItem="wen-PP-Atv" secondAttribute="trailing" id="U3S-Ap-s3e"/>
+                            <constraint firstItem="wen-PP-Atv" firstAttribute="top" secondItem="neS-oh-8pp" secondAttribute="top" id="bB9-Ok-ROd"/>
+                            <constraint firstItem="wen-PP-Atv" firstAttribute="leading" secondItem="neS-oh-8pp" secondAttribute="leading" id="nb3-pL-lg9"/>
+                            <constraint firstItem="omu-ss-iPm" firstAttribute="leading" secondItem="neS-oh-8pp" secondAttribute="leading" id="oPX-PG-vZY"/>
+                            <constraint firstItem="omu-ss-iPm" firstAttribute="top" secondItem="bd1-aP-DS8" secondAttribute="bottom" constant="15" id="rGi-Z8-De8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftConstraint" destination="nb3-pL-lg9" id="pNi-dA-YtX"/>
+                        <outlet property="myTableView" destination="wen-PP-Atv" id="Rf0-UF-9Jv"/>
+                        <outlet property="rightConstraint" destination="U3S-Ap-s3e" id="8gS-Rs-JjN"/>
+                        <outlet property="tixingImageView" destination="bd1-aP-DS8" id="DOO-Qi-Spq"/>
+                        <outlet property="tixingLabel" destination="omu-ss-iPm" id="OPx-Ix-nXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pd5-kb-FT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

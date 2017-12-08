@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Screening View Controller-->
+        <scene sceneID="6eN-Qj-Tl2">
+            <objects>
+                <viewController storyboardIdentifier="DSScreeningViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nwf-N5-wTn" customClass="DSScreeningViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="geZ-MY-Y6L"/>
+                        <viewControllerLayoutGuide type="bottom" id="9l0-5N-QMr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ENZ-Hu-rW4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SjW-1B-6zP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="625"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcK-tf-y62">
+                                <rect key="frame" x="0.0" y="623" width="147.5" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XOX-3a-lgQ"/>
+                                </constraints>
+                                <state key="normal" title="重置">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetAction:" destination="Nwf-N5-wTn" eventType="touchUpInside" id="e0d-YR-iur"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-Yq-JTB">
+                                <rect key="frame" x="147.5" y="623" width="227.5" height="44"/>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vv8-1L-reK"/>
+                                </constraints>
+                                <state key="normal" title="确定">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="determineAction:" destination="Nwf-N5-wTn" eventType="touchUpInside" id="uY7-9o-Yfg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SjW-1B-6zP" firstAttribute="top" secondItem="ENZ-Hu-rW4" secondAttribute="top" id="CS7-el-axn"/>
+                            <constraint firstItem="HWZ-Yq-JTB" firstAttribute="leading" secondItem="AcK-tf-y62" secondAttribute="trailing" id="EER-Xj-j0B"/>
+                            <constraint firstAttribute="bottom" secondItem="AcK-tf-y62" secondAttribute="bottom" id="Gwv-DL-s92"/>
+                            <constraint firstAttribute="trailing" secondItem="SjW-1B-6zP" secondAttribute="trailing" id="PtN-Xu-J8S"/>
+                            <constraint firstItem="AcK-tf-y62" firstAttribute="leading" secondItem="ENZ-Hu-rW4" secondAttribute="leading" id="YOp-fo-FEO"/>
+                            <constraint firstItem="HWZ-Yq-JTB" firstAttribute="bottom" secondItem="ENZ-Hu-rW4" secondAttribute="bottomMargin" id="e8g-LG-jRf"/>
+                            <constraint firstItem="SjW-1B-6zP" firstAttribute="leading" secondItem="ENZ-Hu-rW4" secondAttribute="leading" id="myU-hy-70C"/>
+                            <constraint firstItem="HWZ-Yq-JTB" firstAttribute="width" secondItem="AcK-tf-y62" secondAttribute="width" constant="80" id="qZy-bF-u8d"/>
+                            <constraint firstAttribute="bottom" secondItem="SjW-1B-6zP" secondAttribute="bottom" constant="42" id="t9r-qj-0FU"/>
+                            <constraint firstAttribute="trailing" secondItem="HWZ-Yq-JTB" secondAttribute="trailing" id="wxH-x9-ToF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="SjW-1B-6zP" id="yS8-XN-9Ou"/>
+                        <outlet property="resetBtn" destination="AcK-tf-y62" id="bjf-w8-q4F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Yb-9d-E7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.5" y="284.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

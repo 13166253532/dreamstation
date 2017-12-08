@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Inver Stors Authentication View Controller-->
+        <scene sceneID="Mwx-Vb-eAv">
+            <objects>
+                <viewController storyboardIdentifier="DSInverStorsAuthenticationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tX3-cE-DE9" customClass="DSInverStorsAuthenticationViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SqL-19-ILp"/>
+                        <viewControllerLayoutGuide type="bottom" id="IhB-jh-iDv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5MP-cC-Q8q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ob-aP-Lle">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="OEf-IS-2kQ"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY6-8s-QaW">
+                                <rect key="frame" x="20" y="295" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="MyF-Zn-a6O"/>
+                                    <constraint firstAttribute="height" constant="20" id="hSA-9v-vle"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="Authentication_weixuanBtn"/>
+                                <connections>
+                                    <action selector="selectBtnOfClick:" destination="tX3-cE-DE9" eventType="touchUpInside" id="bb6-dC-I8l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已阅读并同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfg-Nk-xur">
+                                <rect key="frame" x="45" y="295" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aYd-xs-AOF"/>
+                                    <constraint firstAttribute="height" constant="21" id="bWf-lH-VQp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AB-CH-hvQ">
+                                <rect key="frame" x="15" y="341" width="345" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="RMu-F5-lky"/>
+                                </constraints>
+                                <state key="normal" title="下一步" backgroundImage="baseBtn_Bg">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtnOfClick:" destination="tX3-cE-DE9" eventType="touchUpInside" id="LWC-wA-yQE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.050000000000000003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnE-dY-XAZ">
+                                <rect key="frame" x="125" y="290" width="60" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cLn-ao-8tI"/>
+                                    <constraint firstAttribute="width" constant="60" id="vpJ-MO-rQl"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="serviceBtnOfClick:" destination="tX3-cE-DE9" eventType="touchUpInside" id="Fuf-Zj-1TX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0ob-aP-Lle" firstAttribute="leading" secondItem="5MP-cC-Q8q" secondAttribute="leading" id="7Cn-ZI-uri"/>
+                            <constraint firstItem="UnE-dY-XAZ" firstAttribute="top" secondItem="0ob-aP-Lle" secondAttribute="bottom" constant="5" id="CBb-dS-G9Y"/>
+                            <constraint firstItem="0AB-CH-hvQ" firstAttribute="top" secondItem="rfg-Nk-xur" secondAttribute="bottom" constant="25" id="F9r-Bj-7ny"/>
+                            <constraint firstAttribute="trailing" secondItem="0AB-CH-hvQ" secondAttribute="trailing" constant="15" id="QAN-GZ-HL0"/>
+                            <constraint firstAttribute="trailing" secondItem="0ob-aP-Lle" secondAttribute="trailing" id="QhS-4i-qZn"/>
+                            <constraint firstItem="cY6-8s-QaW" firstAttribute="leading" secondItem="5MP-cC-Q8q" secondAttribute="leading" constant="20" id="cT5-y5-Cm3"/>
+                            <constraint firstItem="0ob-aP-Lle" firstAttribute="top" secondItem="5MP-cC-Q8q" secondAttribute="top" id="e6r-uI-ccb"/>
+                            <constraint firstItem="cY6-8s-QaW" firstAttribute="top" secondItem="0ob-aP-Lle" secondAttribute="bottom" constant="10" id="gq6-Y4-Mqu"/>
+                            <constraint firstItem="rfg-Nk-xur" firstAttribute="top" secondItem="0ob-aP-Lle" secondAttribute="bottom" constant="10" id="lYi-9R-dLa"/>
+                            <constraint firstItem="rfg-Nk-xur" firstAttribute="leading" secondItem="cY6-8s-QaW" secondAttribute="trailing" constant="5" id="oDO-Xw-9nc"/>
+                            <constraint firstItem="0AB-CH-hvQ" firstAttribute="leading" secondItem="5MP-cC-Q8q" secondAttribute="leading" constant="15" id="qxV-bK-zwk"/>
+                            <constraint firstItem="UnE-dY-XAZ" firstAttribute="leading" secondItem="5MP-cC-Q8q" secondAttribute="leading" constant="125" id="xGJ-xd-oiI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="0AB-CH-hvQ" id="LJf-ti-0Vu"/>
+                        <outlet property="selectBtn" destination="cY6-8s-QaW" id="QED-PT-orh"/>
+                        <outlet property="serviceBtn" destination="UnE-dY-XAZ" id="ncz-cF-01b"/>
+                        <outlet property="tableView" destination="0ob-aP-Lle" id="M0Y-MF-Kmo"/>
+                        <outlet property="tishiLabel" destination="rfg-Nk-xur" id="Yah-d3-LFo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIP-Zp-Wg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.5" y="181.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Authentication_weixuanBtn" width="18" height="18"/>
+        <image name="baseBtn_Bg" width="345" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,14 @@
+/* 
+  DSInvestors.strings
+  DreamStation
+
+  Created by xjb on 16/7/29.
+  Copyright © 2016年 QPP. All rights reserved.
+*/
+"DSInvestorsHeat" = "热度";
+"DSInvestorsTime" = "最新上线";
+"DSInvestorsScreen" = "筛选";
+"DSInvesDetailsIntroduceTitle" = "现在IDG资本资本合伙人。李先生侧重于通信、半导体、无限、媒体和能源领域的投资。他在通讯和半导体行业有着丰富的工程管理和创业经验。在此之前，作为NASDAQ两家上市半导体公司美国博通公司和美国迈阿密等有关企业的资深投资人";
+"DSInvesFocusOnTips" = "注意：为了减少平台重复信息量，您每天只能发送10次请求，在十天内不能对同一投资人发送。";
+
+"DSInvesNoComplete" = "由于您的身份限制，现在无法完成此操作";

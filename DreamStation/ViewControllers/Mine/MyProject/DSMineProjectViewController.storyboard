@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mine Project View Controller-->
+        <scene sceneID="TFe-P4-Anj">
+            <objects>
+                <viewController storyboardIdentifier="DSMineProjectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S18-lW-ZbS" customClass="DSMineProjectViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eyg-Dz-YtR"/>
+                        <viewControllerLayoutGuide type="bottom" id="4tW-Od-4sC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M8O-Uo-Lhc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evL-hp-abr" customClass="HMSegmentedControl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EDw-w3-cV6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgW-Hx-Swe">
+                                <rect key="frame" x="0.0" y="40" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsp-qj-pOj">
+                                <rect key="frame" x="15" y="615" width="345" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cW5-rb-1xq"/>
+                                </constraints>
+                                <state key="normal" title="添加项目公司" backgroundImage="mine_login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action:" destination="S18-lW-ZbS" eventType="touchUpInside" id="QGN-yT-viz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Project_fenge" translatesAutoresizingMaskIntoConstraints="NO" id="LqH-XX-ZeJ">
+                                <rect key="frame" x="0.0" y="606" width="375" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="WcQ-W1-rKn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qsp-qj-pOj" firstAttribute="top" secondItem="LqH-XX-ZeJ" secondAttribute="bottom" constant="8" id="5Av-U1-GwC"/>
+                            <constraint firstAttribute="bottom" secondItem="Qsp-qj-pOj" secondAttribute="bottom" constant="8" id="8w2-Rw-L0M"/>
+                            <constraint firstItem="Qsp-qj-pOj" firstAttribute="leading" secondItem="M8O-Uo-Lhc" secondAttribute="leading" constant="15" id="J9U-Ch-fqa"/>
+                            <constraint firstItem="4tW-Od-4sC" firstAttribute="top" secondItem="IgW-Hx-Swe" secondAttribute="bottom" constant="60" id="Mrd-0Q-3x2"/>
+                            <constraint firstItem="evL-hp-abr" firstAttribute="leading" secondItem="M8O-Uo-Lhc" secondAttribute="leading" id="QWP-4k-lxh"/>
+                            <constraint firstAttribute="trailing" secondItem="evL-hp-abr" secondAttribute="trailing" id="RHI-hF-TVG"/>
+                            <constraint firstAttribute="trailing" secondItem="LqH-XX-ZeJ" secondAttribute="trailing" id="YeD-ZV-UXg"/>
+                            <constraint firstItem="LqH-XX-ZeJ" firstAttribute="leading" secondItem="M8O-Uo-Lhc" secondAttribute="leading" id="fh0-U7-Boo"/>
+                            <constraint firstItem="evL-hp-abr" firstAttribute="top" secondItem="M8O-Uo-Lhc" secondAttribute="top" id="fzn-hA-oLQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Qsp-qj-pOj" secondAttribute="trailing" constant="15" id="sGU-pj-Zeh"/>
+                            <constraint firstItem="IgW-Hx-Swe" firstAttribute="leading" secondItem="M8O-Uo-Lhc" secondAttribute="leading" id="tQE-1s-3cH"/>
+                            <constraint firstAttribute="trailing" secondItem="IgW-Hx-Swe" secondAttribute="trailing" id="tho-T3-Aq5"/>
+                            <constraint firstItem="IgW-Hx-Swe" firstAttribute="top" secondItem="evL-hp-abr" secondAttribute="bottom" id="xNg-Mv-Rls"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="IgW-Hx-Swe" id="Nxd-bd-emt"/>
+                        <outlet property="segment" destination="evL-hp-abr" id="tRQ-Rh-jmW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fp5-6z-vw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407.19999999999999" y="-189.3553223388306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Project_fenge" width="1" height="1"/>
+        <image name="mine_login" width="345" height="44"/>
+    </resources>
+</document>

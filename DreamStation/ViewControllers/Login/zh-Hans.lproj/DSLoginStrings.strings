@@ -1,0 +1,18 @@
+/* 
+  DSLoginStrings.strings
+  DreamStation
+
+  Created by 刘佳斌 on 16/7/19.
+  Copyright © 2016年 QPP. All rights reserved.
+*/
+
+"Login_MobileNumber" = "用户名/手机号";
+"Login_Password" = "密码";
+"Login_ForgotPassword" = "忘记密码？";
+"Login_SignUp" = "注册";
+"Login_LogIn" = "登录";
+
+
+"ActivateStatus_SUCCESS"="SUCCESS";//为已激活
+"ActivateStatus_FAIL"="FAIL";//为未通过
+"ActivateStatus_AUTHSTR"="AUTHSTR";//为待审核

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSParkMessageRemindCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSParkMessageRemindCell" rowHeight="40" id="dpM-CO-iDS" customClass="DSParkMessageRemindCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dpM-CO-iDS" id="EJr-Ie-hgO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Park_remind" translatesAutoresizingMaskIntoConstraints="NO" id="pDw-tR-ME2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Park_laba" translatesAutoresizingMaskIntoConstraints="NO" id="qqZ-0m-R0Y">
+                        <rect key="frame" x="18" y="14" width="9" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="O7b-aF-KeU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zr-h6-top">
+                        <rect key="frame" x="40" y="0.0" width="280" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.92549019607843142" green="0.41176470588235292" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="qqZ-0m-R0Y" secondAttribute="bottom" constant="7" id="3aN-bT-5fn"/>
+                    <constraint firstItem="3zr-h6-top" firstAttribute="leading" secondItem="qqZ-0m-R0Y" secondAttribute="trailing" constant="13" id="6zI-0I-Q0J"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qqZ-0m-R0Y" secondAttribute="bottom" constant="8" id="FWh-bZ-Zw1"/>
+                    <constraint firstItem="pDw-tR-ME2" firstAttribute="leading" secondItem="EJr-Ie-hgO" secondAttribute="leading" id="Fcf-eM-T2d"/>
+                    <constraint firstAttribute="bottom" secondItem="3zr-h6-top" secondAttribute="bottom" id="Qpq-8p-jyh"/>
+                    <constraint firstItem="qqZ-0m-R0Y" firstAttribute="top" secondItem="EJr-Ie-hgO" secondAttribute="topMargin" constant="6" id="T30-vc-wbT"/>
+                    <constraint firstItem="qqZ-0m-R0Y" firstAttribute="leading" secondItem="EJr-Ie-hgO" secondAttribute="leadingMargin" constant="10" id="V6i-SO-kyg"/>
+                    <constraint firstItem="3zr-h6-top" firstAttribute="top" secondItem="EJr-Ie-hgO" secondAttribute="top" id="YZU-aT-Ym7"/>
+                    <constraint firstAttribute="bottom" secondItem="pDw-tR-ME2" secondAttribute="bottom" id="fwH-v8-jWC"/>
+                    <constraint firstItem="qqZ-0m-R0Y" firstAttribute="top" secondItem="EJr-Ie-hgO" secondAttribute="topMargin" constant="5" id="g8d-Hx-JdN"/>
+                    <constraint firstItem="pDw-tR-ME2" firstAttribute="top" secondItem="EJr-Ie-hgO" secondAttribute="top" id="jFp-u1-i1N"/>
+                    <constraint firstAttribute="trailing" secondItem="3zr-h6-top" secondAttribute="trailing" id="nrq-Ta-wBU"/>
+                    <constraint firstAttribute="trailing" secondItem="pDw-tR-ME2" secondAttribute="trailing" id="v4y-b8-uwU"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="FWh-bZ-Zw1"/>
+                        <exclude reference="g8d-Hx-JdN"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="3zr-h6-top" id="M60-z3-N3a"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="163"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Park_laba" width="12" height="10"/>
+        <image name="Park_remind" width="375" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>天使轮</string>
+	<string>VC阶段-PreA轮</string>
+	<string>VC阶段-A轮</string>
+	<string>PE阶段-B轮</string>
+	<string>PE阶段-C轮</string>
+	<string>PE阶段-D轮及后续轮</string>
+	<string>新三板-挂牌前轮</string>
+	<string>新三板-定增轮</string>
+	<string>其他</string>
+</array>
+</plist>

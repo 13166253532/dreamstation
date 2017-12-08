@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Park View Controller-->
+        <scene sceneID="kkR-UC-REj">
+            <objects>
+                <viewController storyboardIdentifier="DSParkViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gbz-yj-fPr" customClass="DSParkViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A87-Hj-MzX"/>
+                        <viewControllerLayoutGuide type="bottom" id="YvR-y7-abb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FZ6-9c-os3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-h9-XfU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="vwl-zx-aMk">
+                                <rect key="frame" x="125" y="229" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="emf-12-zhB"/>
+                                    <constraint firstAttribute="width" constant="70" id="w5D-5K-AX4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无搜索结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNP-v8-Fw9">
+                                <rect key="frame" x="0.0" y="310" width="320" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xNP-v8-Fw9" firstAttribute="leading" secondItem="FZ6-9c-os3" secondAttribute="leading" id="CYD-uc-NGt"/>
+                            <constraint firstItem="vwl-zx-aMk" firstAttribute="centerX" secondItem="Fbq-h9-XfU" secondAttribute="centerX" id="Gxc-xo-f2G"/>
+                            <constraint firstItem="Fbq-h9-XfU" firstAttribute="leading" secondItem="FZ6-9c-os3" secondAttribute="leading" id="UzC-ZL-Nip"/>
+                            <constraint firstAttribute="trailing" secondItem="Fbq-h9-XfU" secondAttribute="trailing" id="Y4W-qH-lV0"/>
+                            <constraint firstItem="vwl-zx-aMk" firstAttribute="top" secondItem="FZ6-9c-os3" secondAttribute="top" constant="229" id="ZLF-SP-x7y"/>
+                            <constraint firstItem="xNP-v8-Fw9" firstAttribute="top" secondItem="FZ6-9c-os3" secondAttribute="top" constant="310" id="aup-DH-eNN"/>
+                            <constraint firstAttribute="trailing" secondItem="xNP-v8-Fw9" secondAttribute="trailing" id="f6R-zT-y12"/>
+                            <constraint firstAttribute="bottom" secondItem="Fbq-h9-XfU" secondAttribute="bottom" id="gCX-Ff-NRn"/>
+                            <constraint firstItem="Fbq-h9-XfU" firstAttribute="top" secondItem="FZ6-9c-os3" secondAttribute="top" id="qG8-ht-qVf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="layout" destination="gCX-Ff-NRn" id="MKF-cn-xfd"/>
+                        <outlet property="myTableView" destination="Fbq-h9-XfU" id="4ku-mQ-uLe"/>
+                        <outlet property="tixingImage" destination="vwl-zx-aMk" id="M6e-cy-EpC"/>
+                        <outlet property="tixingLabel" destination="xNP-v8-Fw9" id="gMK-Wg-hq2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wa0-Uf-7hJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="-162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Search Investor ResultVC-->
+        <scene sceneID="CjV-Kw-gqh">
+            <objects>
+                <viewController storyboardIdentifier="DSSearchInvestorResultVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h8o-gN-tpq" customClass="DSSearchInvestorResultVC" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KtY-db-OFm"/>
+                        <viewControllerLayoutGuide type="bottom" id="GO3-DJ-0DB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2pj-U5-8iZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tVx-Qr-F7C">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="rAl-Dn-pN1">
+                                <rect key="frame" x="125" y="249" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="VKI-nP-Jiq"/>
+                                    <constraint firstAttribute="width" constant="70" id="vrI-37-Tti"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未搜索到结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSa-f7-dD5">
+                                <rect key="frame" x="0.0" y="327" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vaH-8n-Pty"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hSa-f7-dD5" secondAttribute="trailing" id="CVO-59-XJn"/>
+                            <constraint firstItem="hSa-f7-dD5" firstAttribute="leading" secondItem="2pj-U5-8iZ" secondAttribute="leading" id="CnK-Dh-MI0"/>
+                            <constraint firstAttribute="trailing" secondItem="tVx-Qr-F7C" secondAttribute="trailing" id="GGe-12-QDE"/>
+                            <constraint firstItem="tVx-Qr-F7C" firstAttribute="leading" secondItem="2pj-U5-8iZ" secondAttribute="leading" id="Mbs-UM-E0U"/>
+                            <constraint firstItem="rAl-Dn-pN1" firstAttribute="centerX" secondItem="2pj-U5-8iZ" secondAttribute="centerX" id="Nrw-vc-SCf"/>
+                            <constraint firstItem="rAl-Dn-pN1" firstAttribute="centerY" secondItem="2pj-U5-8iZ" secondAttribute="centerY" id="Ywv-q6-J3B"/>
+                            <constraint firstItem="hSa-f7-dD5" firstAttribute="top" secondItem="rAl-Dn-pN1" secondAttribute="bottom" constant="8" id="g7J-9r-XWx"/>
+                            <constraint firstItem="GO3-DJ-0DB" firstAttribute="top" secondItem="tVx-Qr-F7C" secondAttribute="bottom" id="hfg-Oe-HFO"/>
+                            <constraint firstItem="tVx-Qr-F7C" firstAttribute="top" secondItem="KtY-db-OFm" secondAttribute="bottom" id="ruD-pa-ItJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attImage" destination="rAl-Dn-pN1" id="dsc-cB-UH5"/>
+                        <outlet property="attLabel" destination="hSa-f7-dD5" id="er4-rO-AhW"/>
+                        <outlet property="tableView" destination="tVx-Qr-F7C" id="XaO-iJ-d9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xp-U7-wYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="244.24000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+</document>

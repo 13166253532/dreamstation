@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSSecreenCityTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSSecreenCityTableViewCell" rowHeight="140" id="MqA-dC-xRJ" customClass="DSSecreenCityTableViewCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MqA-dC-xRJ" id="gFX-Pb-ttm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2B-Hf-62i">
+                        <rect key="frame" x="15" y="25" width="105" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5Zk-5C-4Kr">
+                        <rect key="frame" x="0.0" y="41" width="320" height="89"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ouy-Z4-FuI">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nM9-hE-a1m">
+                        <rect key="frame" x="250" y="0.0" width="70" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="oet-MG-iSi"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="action:" destination="MqA-dC-xRJ" eventType="touchUpInside" id="hOe-UM-fWw"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hot_Hline" translatesAutoresizingMaskIntoConstraints="NO" id="uNq-O1-IBE">
+                        <rect key="frame" x="0.0" y="139" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gui-e8-lNF"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xTs-jx-spM">
+                        <rect key="frame" x="286" y="25" width="12" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="1UD-NR-CAT"/>
+                            <constraint firstAttribute="width" constant="12" id="ynH-CW-Nna"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5Zk-5C-4Kr" secondAttribute="trailing" id="1m3-8F-O8E"/>
+                    <constraint firstItem="5Zk-5C-4Kr" firstAttribute="top" secondItem="nM9-hE-a1m" secondAttribute="bottom" id="35D-Qn-qZz"/>
+                    <constraint firstAttribute="trailing" secondItem="uNq-O1-IBE" secondAttribute="trailing" id="GAT-WB-5hp"/>
+                    <constraint firstAttribute="bottom" secondItem="uNq-O1-IBE" secondAttribute="bottom" id="RAE-rA-Y4J"/>
+                    <constraint firstAttribute="trailing" secondItem="nM9-hE-a1m" secondAttribute="trailing" id="RiW-Gp-Aup"/>
+                    <constraint firstItem="5Zk-5C-4Kr" firstAttribute="top" secondItem="M2B-Hf-62i" secondAttribute="bottom" id="UGh-Yk-KjV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xTs-jx-spM" secondAttribute="trailing" constant="14" id="amc-p2-3kn"/>
+                    <constraint firstItem="nM9-hE-a1m" firstAttribute="top" secondItem="gFX-Pb-ttm" secondAttribute="top" id="dMK-Bk-MHD"/>
+                    <constraint firstItem="M2B-Hf-62i" firstAttribute="top" secondItem="gFX-Pb-ttm" secondAttribute="top" constant="25" id="gyO-sl-Piy"/>
+                    <constraint firstItem="xTs-jx-spM" firstAttribute="top" secondItem="gFX-Pb-ttm" secondAttribute="top" constant="25" id="joF-Xd-9NP"/>
+                    <constraint firstItem="nM9-hE-a1m" firstAttribute="leading" secondItem="M2B-Hf-62i" secondAttribute="trailing" constant="130" id="ljl-KJ-Ryy"/>
+                    <constraint firstItem="uNq-O1-IBE" firstAttribute="leading" secondItem="gFX-Pb-ttm" secondAttribute="leading" id="moJ-oq-jFo"/>
+                    <constraint firstAttribute="bottom" secondItem="5Zk-5C-4Kr" secondAttribute="bottom" constant="10" id="nmF-g2-Ev2"/>
+                    <constraint firstItem="M2B-Hf-62i" firstAttribute="leading" secondItem="gFX-Pb-ttm" secondAttribute="leading" constant="15" id="qSp-tV-WMs"/>
+                    <constraint firstItem="5Zk-5C-4Kr" firstAttribute="leading" secondItem="gFX-Pb-ttm" secondAttribute="leading" id="u8S-mZ-YBj"/>
+                    <constraint firstAttribute="trailing" secondItem="M2B-Hf-62i" secondAttribute="trailing" constant="200" id="xph-QY-92X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="isAnButton" destination="nM9-hE-a1m" id="xSr-yX-FmO"/>
+                <outlet property="isAnImage" destination="xTs-jx-spM" id="XjP-2c-ibX"/>
+                <outlet property="myCollectionView" destination="5Zk-5C-4Kr" id="T4X-YD-Df9"/>
+                <outlet property="titleLabel" destination="M2B-Hf-62i" id="T9o-XC-ekq"/>
+            </connections>
+            <point key="canvasLocation" x="-37" y="11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Hot_Hline" width="1" height="1"/>
+    </resources>
+</document>

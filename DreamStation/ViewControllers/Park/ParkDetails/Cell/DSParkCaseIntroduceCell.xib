@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSParkCaseIntroduceCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSParkCaseIntroduceCell" rowHeight="145" id="w5f-Se-vPo" customClass="DSParkCaseIntroduceCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w5f-Se-vPo" id="AW3-4T-yt3">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnk-ZD-JOi">
+                        <rect key="frame" x="15" y="0.0" width="290" height="144"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Nnk-ZD-JOi" secondAttribute="trailing" constant="15" id="QTm-ic-DHF"/>
+                    <constraint firstAttribute="bottom" secondItem="Nnk-ZD-JOi" secondAttribute="bottom" id="Ufr-sf-uOb"/>
+                    <constraint firstItem="Nnk-ZD-JOi" firstAttribute="leading" secondItem="AW3-4T-yt3" secondAttribute="leading" constant="15" id="lD9-AA-hmb"/>
+                    <constraint firstItem="Nnk-ZD-JOi" firstAttribute="top" secondItem="AW3-4T-yt3" secondAttribute="top" id="lu0-3C-ced"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="Nnk-ZD-JOi" id="guQ-cg-cnw"/>
+            </connections>
+            <point key="canvasLocation" x="66" y="118"/>
+        </tableViewCell>
+    </objects>
+</document>

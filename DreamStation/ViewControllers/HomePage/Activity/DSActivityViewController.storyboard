@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity View Controller-->
+        <scene sceneID="ThS-KK-MIH">
+            <objects>
+                <viewController storyboardIdentifier="DSActivityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jEh-HR-vqw" customClass="DSActivityViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f6e-Zw-wDI"/>
+                        <viewControllerLayoutGuide type="bottom" id="GbA-Qv-457"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ihS-g5-Xa4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WIe-FY-JrU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="jyl-ea-ReJ">
+                                <rect key="frame" x="125" y="245" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="XXy-Jo-ULe"/>
+                                    <constraint firstAttribute="height" constant="70" id="h0c-of-czm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有参与的活动" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glI-wu-nsw">
+                                <rect key="frame" x="0.0" y="320" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="K59-3U-L8W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="glI-wu-nsw" firstAttribute="leading" secondItem="ihS-g5-Xa4" secondAttribute="leading" id="AV5-3T-085"/>
+                            <constraint firstAttribute="trailing" secondItem="WIe-FY-JrU" secondAttribute="trailing" id="PI0-Oq-tQ6"/>
+                            <constraint firstItem="jyl-ea-ReJ" firstAttribute="centerX" secondItem="ihS-g5-Xa4" secondAttribute="centerX" id="Pka-Jk-Nlf"/>
+                            <constraint firstItem="glI-wu-nsw" firstAttribute="top" secondItem="jyl-ea-ReJ" secondAttribute="bottom" constant="5" id="Q0c-UQ-9W5"/>
+                            <constraint firstItem="WIe-FY-JrU" firstAttribute="bottom" secondItem="ihS-g5-Xa4" secondAttribute="bottomMargin" id="ZOq-3b-4JR"/>
+                            <constraint firstAttribute="trailing" secondItem="glI-wu-nsw" secondAttribute="trailing" id="pEu-dw-kXq"/>
+                            <constraint firstItem="WIe-FY-JrU" firstAttribute="leading" secondItem="ihS-g5-Xa4" secondAttribute="leading" id="v9X-it-PVF"/>
+                            <constraint firstItem="WIe-FY-JrU" firstAttribute="top" secondItem="ihS-g5-Xa4" secondAttribute="topMargin" id="vGY-Sc-XLP"/>
+                            <constraint firstItem="jyl-ea-ReJ" firstAttribute="top" secondItem="f6e-Zw-wDI" secondAttribute="bottom" constant="225" id="w7h-ZG-8rp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityTableView" destination="WIe-FY-JrU" id="1v9-JE-8e3"/>
+                        <outlet property="attImageView" destination="jyl-ea-ReJ" id="0mq-md-xqY"/>
+                        <outlet property="attLabel" destination="glI-wu-nsw" id="xje-8p-C6Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EH5-fw-B5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+</document>

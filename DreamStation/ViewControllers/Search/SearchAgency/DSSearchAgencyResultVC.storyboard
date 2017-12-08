@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Agency ResultVC-->
+        <scene sceneID="8SP-kG-cjM">
+            <objects>
+                <viewController storyboardIdentifier="DSSearchAgencyResultVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GBX-Az-SB5" customClass="DSSearchAgencyResultVC" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CpD-OW-YQa"/>
+                        <viewControllerLayoutGuide type="bottom" id="wUF-Vz-1aZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NmI-Gf-DGm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GaO-ud-QJc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-Vp-L82">
+                                <rect key="frame" x="152.5" y="298.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="0CH-sG-z3v"/>
+                                    <constraint firstAttribute="height" constant="70" id="0gK-3R-EyZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未搜索到结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3H-Bo-k9S">
+                                <rect key="frame" x="0.0" y="376.5" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="S3A-Ov-pKJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eDn-Vp-L82" firstAttribute="centerX" secondItem="NmI-Gf-DGm" secondAttribute="centerX" id="CJU-Kt-yL4"/>
+                            <constraint firstItem="z3H-Bo-k9S" firstAttribute="leading" secondItem="NmI-Gf-DGm" secondAttribute="leading" id="JIN-G5-aYC"/>
+                            <constraint firstAttribute="trailing" secondItem="z3H-Bo-k9S" secondAttribute="trailing" id="PJV-BD-vSO"/>
+                            <constraint firstAttribute="trailing" secondItem="GaO-ud-QJc" secondAttribute="trailing" id="Qfm-VB-9XM"/>
+                            <constraint firstItem="GaO-ud-QJc" firstAttribute="top" secondItem="NmI-Gf-DGm" secondAttribute="top" id="RGK-Z1-Nie"/>
+                            <constraint firstItem="eDn-Vp-L82" firstAttribute="centerY" secondItem="NmI-Gf-DGm" secondAttribute="centerY" id="Zfu-3e-LL2"/>
+                            <constraint firstAttribute="bottom" secondItem="GaO-ud-QJc" secondAttribute="bottom" id="fgf-k8-2gm"/>
+                            <constraint firstItem="GaO-ud-QJc" firstAttribute="leading" secondItem="NmI-Gf-DGm" secondAttribute="leading" id="gsd-V3-qLH"/>
+                            <constraint firstItem="z3H-Bo-k9S" firstAttribute="top" secondItem="eDn-Vp-L82" secondAttribute="bottom" constant="8" id="rbD-ek-laj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attImage" destination="eDn-Vp-L82" id="rts-IO-DV9"/>
+                        <outlet property="attLabel" destination="z3H-Bo-k9S" id="MAC-gt-Nwb"/>
+                        <outlet property="tableView" destination="GaO-ud-QJc" id="FO1-gY-vG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBg-CF-LQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270.39999999999998" y="264.12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

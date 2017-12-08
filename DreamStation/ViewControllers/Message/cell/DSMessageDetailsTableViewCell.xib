@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSMessageDetailsTableViewCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DSMessageDetailsTableViewCell" id="2Ql-NH-0sK" customClass="DSMessageDetailsTableViewCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Ql-NH-0sK" id="7dm-2N-hC7">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldT-sI-jo7">
+                        <rect key="frame" x="15" y="14" width="60" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="message_remind" translatesAutoresizingMaskIntoConstraints="NO" id="WBT-GE-eTE">
+                        <rect key="frame" x="276" y="18" width="5" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="vwf-G8-Agn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vwf-G8-Agn"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ldT-sI-jo7" firstAttribute="centerY" secondItem="7dm-2N-hC7" secondAttribute="centerY" id="7CI-Mw-kyi"/>
+                    <constraint firstItem="WBT-GE-eTE" firstAttribute="top" secondItem="7dm-2N-hC7" secondAttribute="topMargin" constant="10" id="Jce-wL-LCz"/>
+                    <constraint firstItem="WBT-GE-eTE" firstAttribute="leading" secondItem="ldT-sI-jo7" secondAttribute="trailing" constant="201" id="SKl-43-Hq2"/>
+                    <constraint firstItem="WBT-GE-eTE" firstAttribute="trailing" secondItem="7dm-2N-hC7" secondAttribute="trailingMargin" constant="2" id="VUU-il-7aI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WBT-GE-eTE" secondAttribute="bottom" constant="11" id="XSy-Z4-RQ6"/>
+                    <constraint firstItem="ldT-sI-jo7" firstAttribute="leading" secondItem="7dm-2N-hC7" secondAttribute="leadingMargin" constant="7" id="dEB-Bb-i1C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="redImage" destination="WBT-GE-eTE" id="uLb-Fw-khN"/>
+                <outlet property="titleLabel" destination="ldT-sI-jo7" id="dxM-LI-5G1"/>
+            </connections>
+            <point key="canvasLocation" x="257" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="message_remind" width="5" height="5"/>
+    </resources>
+</document>

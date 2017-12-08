@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--登录-->
+        <scene sceneID="soQ-Ep-MYT">
+            <objects>
+                <viewController storyboardIdentifier="DSLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="425-s3-fXN" customClass="DSLoginViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TV7-tu-Nyw"/>
+                        <viewControllerLayoutGuide type="bottom" id="lEq-h0-EQa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zpe-s6-qpw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="orS-6m-wMY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="g29-Go-UBc"/>
+                                </constraints>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如您有机构投资者、园区方账号，请直接输入用户名/密码登录" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2c-in-J0g">
+                                <rect key="frame" x="15" y="118" width="345" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOv-HR-Ts3">
+                                <rect key="frame" x="15" y="147.5" width="345" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="登录" backgroundImage="baseBtn_Bg">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtnOfClick:" destination="425-s3-fXN" eventType="touchUpInside" id="oXS-wt-sBI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y2c-in-J0g" secondAttribute="trailing" constant="15" id="2Zd-Rh-joD"/>
+                            <constraint firstItem="orS-6m-wMY" firstAttribute="top" secondItem="zpe-s6-qpw" secondAttribute="topMargin" id="8xT-AV-eiZ"/>
+                            <constraint firstItem="orS-6m-wMY" firstAttribute="leading" secondItem="zpe-s6-qpw" secondAttribute="leading" id="ToE-YY-BZn"/>
+                            <constraint firstItem="BOv-HR-Ts3" firstAttribute="leading" secondItem="zpe-s6-qpw" secondAttribute="leading" constant="15" id="UTD-C9-Xwu"/>
+                            <constraint firstItem="Y2c-in-J0g" firstAttribute="leading" secondItem="zpe-s6-qpw" secondAttribute="leading" constant="15" id="WIz-cG-xaH"/>
+                            <constraint firstItem="Y2c-in-J0g" firstAttribute="top" secondItem="orS-6m-wMY" secondAttribute="bottom" constant="15" id="k1Y-tQ-fh1"/>
+                            <constraint firstAttribute="trailing" secondItem="BOv-HR-Ts3" secondAttribute="trailing" constant="15" id="kY2-rV-ciw"/>
+                            <constraint firstAttribute="trailing" secondItem="orS-6m-wMY" secondAttribute="trailing" id="nDS-TG-JTP"/>
+                            <constraint firstItem="BOv-HR-Ts3" firstAttribute="top" secondItem="Y2c-in-J0g" secondAttribute="bottom" constant="15" id="rww-92-kBf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="5gV-1V-yRE"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="BOv-HR-Ts3" id="oC6-am-y6O"/>
+                        <outlet property="loginTableView" destination="orS-6m-wMY" id="KG3-HK-OQi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJh-FM-KPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="-463"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baseBtn_Bg" width="345" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

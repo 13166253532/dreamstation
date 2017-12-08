@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="XSCollectionViewCell" reuseIdentifier="XSCollectionViewCell" id="gTV-IL-0wX" customClass="XSCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRo-gG-DyN">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VRo-gG-DyN" secondAttribute="trailing" id="TFl-bt-nNF"/>
+                <constraint firstItem="VRo-gG-DyN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZjO-xc-mcJ"/>
+                <constraint firstAttribute="bottom" secondItem="VRo-gG-DyN" secondAttribute="bottom" id="eoy-M7-7y2"/>
+                <constraint firstItem="VRo-gG-DyN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xZh-40-iPQ"/>
+            </constraints>
+            <size key="customSize" width="75" height="50"/>
+            <connections>
+                <outlet property="btn" destination="VRo-gG-DyN" id="p4e-ip-KfI"/>
+            </connections>
+            <point key="canvasLocation" x="209.5" y="200"/>
+        </collectionViewCell>
+    </objects>
+</document>

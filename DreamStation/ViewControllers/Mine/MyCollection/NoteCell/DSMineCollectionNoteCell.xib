@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSMineCollectionNoteCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSMineCollectionNoteCell" rowHeight="20" id="v2V-D1-qDu" customClass="DSMineCollectionNoteCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v2V-D1-qDu" id="Tvf-Qy-c2i">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVS-8g-zwk">
+                        <rect key="frame" x="10" y="0.0" width="37" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="gmm-Ls-sMN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCW-br-ucD">
+                        <rect key="frame" x="47" y="0.0" width="233" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqp-xx-kWK">
+                        <rect key="frame" x="291" y="2" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="KS6-VX-3Os"/>
+                            <constraint firstAttribute="width" constant="14" id="OdN-fr-BmS"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="Project_changeMark"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G62-Yy-wZ1">
+                        <rect key="frame" x="274" y="0.0" width="46" height="20"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="changeMark:" destination="v2V-D1-qDu" eventType="touchDown" id="6uK-Av-LHX"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G62-Yy-wZ1" firstAttribute="leading" secondItem="uVS-8g-zwk" secondAttribute="trailing" constant="227" id="2mp-hG-2aV"/>
+                    <constraint firstAttribute="bottom" secondItem="uVS-8g-zwk" secondAttribute="bottom" id="9HD-kJ-oGQ"/>
+                    <constraint firstItem="Iqp-xx-kWK" firstAttribute="centerY" secondItem="hCW-br-ucD" secondAttribute="centerY" id="ADY-ws-jSk"/>
+                    <constraint firstItem="hCW-br-ucD" firstAttribute="leading" secondItem="Tvf-Qy-c2i" secondAttribute="leading" constant="47" id="Cx1-xx-KNo"/>
+                    <constraint firstAttribute="trailing" secondItem="hCW-br-ucD" secondAttribute="trailing" constant="40" id="FAQ-Lr-rPQ"/>
+                    <constraint firstItem="G62-Yy-wZ1" firstAttribute="top" secondItem="Tvf-Qy-c2i" secondAttribute="top" id="Jh8-3z-pOl"/>
+                    <constraint firstAttribute="bottom" secondItem="hCW-br-ucD" secondAttribute="bottom" id="LIu-Qn-5iU"/>
+                    <constraint firstAttribute="bottom" secondItem="G62-Yy-wZ1" secondAttribute="bottom" id="N6P-qx-WMc"/>
+                    <constraint firstItem="hCW-br-ucD" firstAttribute="leading" secondItem="uVS-8g-zwk" secondAttribute="trailing" id="RCf-ah-D36"/>
+                    <constraint firstAttribute="trailing" secondItem="G62-Yy-wZ1" secondAttribute="trailing" id="V9x-Fi-TKH"/>
+                    <constraint firstItem="uVS-8g-zwk" firstAttribute="leading" secondItem="Tvf-Qy-c2i" secondAttribute="leading" constant="10" id="YSe-Nt-9Zm"/>
+                    <constraint firstAttribute="trailing" secondItem="uVS-8g-zwk" secondAttribute="trailing" constant="273" id="Zwj-4Z-oxa"/>
+                    <constraint firstItem="uVS-8g-zwk" firstAttribute="top" secondItem="Tvf-Qy-c2i" secondAttribute="top" id="hNU-me-ynE"/>
+                    <constraint firstAttribute="trailing" secondItem="Iqp-xx-kWK" secondAttribute="trailing" constant="15" id="oxL-Ge-IkU"/>
+                    <constraint firstItem="hCW-br-ucD" firstAttribute="top" secondItem="Tvf-Qy-c2i" secondAttribute="top" id="vxn-X2-2sQ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Zwj-4Z-oxa"/>
+                        <exclude reference="RCf-ah-D36"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="noteLabel" destination="hCW-br-ucD" id="5UK-Kx-4sb"/>
+            </connections>
+            <point key="canvasLocation" x="-244" y="37"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Project_changeMark" width="14" height="14"/>
+    </resources>
+</document>

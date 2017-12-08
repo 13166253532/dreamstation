@@ -1,0 +1,17 @@
+/* 
+  DSHomePageViewControllerStrings.strings
+  DreamStation
+
+  Created by 刘佳斌 on 16/7/21.
+  Copyright © 2016年 QPP. All rights reserved.
+*/
+
+
+"ProjectVideo" = "项目方视频集锦";
+"InvestorVideo" = "投资方视频集锦";
+
+"ProjectVideo_image" = "homePage_project";
+"InvestorVideo_image" = "homePage_investor";
+
+
+

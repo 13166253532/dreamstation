@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSFourthTableViewCell" id="zwS-EB-lRK" customClass="DSFourthTableViewCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zwS-EB-lRK" id="bcu-dM-tHg">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQp-tw-UbO">
+                        <rect key="frame" x="15" y="10" width="290" height="149.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="19w-Pb-3IU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="19w-Pb-3IU"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mr4-uZ-0ad">
+                        <rect key="frame" x="243" y="165" width="62" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="pE6-m6-KWM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="更多">
+                            <color key="titleColor" red="0.13333333333333333" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="moreBtnOfClick:" destination="zwS-EB-lRK" eventType="touchUpInside" id="zYB-iW-eZT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tQp-tw-UbO" secondAttribute="bottom" constant="10" id="Bq6-zl-fUt"/>
+                    <constraint firstItem="Mr4-uZ-0ad" firstAttribute="top" secondItem="tQp-tw-UbO" secondAttribute="bottom" constant="5" id="Nig-Ad-TNc"/>
+                    <constraint firstItem="tQp-tw-UbO" firstAttribute="top" secondItem="bcu-dM-tHg" secondAttribute="top" constant="10" id="h4I-ZH-W7K"/>
+                    <constraint firstItem="tQp-tw-UbO" firstAttribute="leading" secondItem="bcu-dM-tHg" secondAttribute="leading" constant="15" id="kIa-Eu-hws"/>
+                    <constraint firstAttribute="trailing" secondItem="tQp-tw-UbO" secondAttribute="trailing" constant="15" id="khO-es-WBf"/>
+                    <constraint firstAttribute="trailing" secondItem="Mr4-uZ-0ad" secondAttribute="trailing" constant="15" id="oih-Rl-siG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLayout" destination="Bq6-zl-fUt" id="4vH-fH-AzK"/>
+                <outlet property="detailLabel" destination="tQp-tw-UbO" id="6pM-P4-D4v"/>
+                <outlet property="moreBtn" destination="Mr4-uZ-0ad" id="raC-vg-4AX"/>
+            </connections>
+            <point key="canvasLocation" x="72" y="375"/>
+        </tableViewCell>
+    </objects>
+</document>

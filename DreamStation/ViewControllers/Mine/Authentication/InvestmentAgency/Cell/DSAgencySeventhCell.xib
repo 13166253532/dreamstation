@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSAgencySeventhCell" id="KGk-i7-Jjw" customClass="DSAgencySeventhCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-Pn-O2q">
+                        <rect key="frame" x="15" y="15" width="38" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="4LZ-IL-Ucj"/>
+                            <constraint firstAttribute="height" constant="21" id="RJV-cM-JdJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4LZ-IL-Ucj"/>
+                                <exclude reference="RJV-cM-JdJ"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxV-XU-cJz">
+                        <rect key="frame" x="206" y="10" width="99" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99" id="aWY-8r-zyb"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="Agency_shenfenzheng"/>
+                        <connections>
+                            <action selector="ClickOfBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ilv-F6-Snf"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homePage_biaoji" translatesAutoresizingMaskIntoConstraints="NO" id="gEM-b5-zIo">
+                        <rect key="frame" x="54" y="16" width="5" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="IDe-IE-Czc"/>
+                            <constraint firstAttribute="width" constant="5" id="rIb-RQ-7ju"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WBB-et-j3B">
+                        <rect key="frame" x="206" y="10" width="99" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99" id="ko5-Xy-lJl"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Project_fenge" translatesAutoresizingMaskIntoConstraints="NO" id="Ybl-Gg-FRh">
+                        <rect key="frame" x="0.0" y="79" width="370" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DuV-2A-ASk"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WBB-et-j3B" secondAttribute="trailing" constant="15" id="6Ld-Ok-ufX"/>
+                    <constraint firstAttribute="bottom" secondItem="Ybl-Gg-FRh" secondAttribute="bottom" id="9wP-tb-u8e"/>
+                    <constraint firstAttribute="bottom" secondItem="WBB-et-j3B" secondAttribute="bottom" constant="10" id="D1c-2j-7ST"/>
+                    <constraint firstAttribute="trailing" secondItem="oxV-XU-cJz" secondAttribute="trailing" constant="15" id="DLZ-bZ-oPg"/>
+                    <constraint firstAttribute="bottom" secondItem="oxV-XU-cJz" secondAttribute="bottom" constant="10" id="MiY-Wk-U9o"/>
+                    <constraint firstItem="WBB-et-j3B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PM1-R6-6Fw"/>
+                    <constraint firstAttribute="trailing" secondItem="Ybl-Gg-FRh" secondAttribute="trailing" constant="-50" id="Ppq-pj-UlA"/>
+                    <constraint firstItem="s2d-Pn-O2q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Tf5-xP-bkA"/>
+                    <constraint firstItem="gEM-b5-zIo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="X1e-lL-P52"/>
+                    <constraint firstItem="oxV-XU-cJz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bC3-If-G0e"/>
+                    <constraint firstItem="Ybl-Gg-FRh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lio-M2-ado"/>
+                    <constraint firstItem="gEM-b5-zIo" firstAttribute="leading" secondItem="s2d-Pn-O2q" secondAttribute="trailing" constant="1" id="pCk-z2-7Mo"/>
+                    <constraint firstItem="s2d-Pn-O2q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="x3Q-Gh-sgM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="biaojiImage" destination="gEM-b5-zIo" id="hMP-cB-0qO"/>
+                <outlet property="detailBtn" destination="oxV-XU-cJz" id="31u-L9-dNg"/>
+                <outlet property="iImage" destination="WBB-et-j3B" id="h8G-y5-ReR"/>
+                <outlet property="imageRightConstraint" destination="DLZ-bZ-oPg" id="fOj-1Z-Jvo"/>
+                <outlet property="imageRightConstrant2" destination="6Ld-Ok-ufX" id="CsR-tn-DwA"/>
+                <outlet property="titleLabel" destination="s2d-Pn-O2q" id="r6c-RE-4Ne"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Agency_shenfenzheng" width="100" height="60"/>
+        <image name="Project_fenge" width="1" height="1"/>
+        <image name="homePage_biaoji" width="5" height="5"/>
+    </resources>
+</document>

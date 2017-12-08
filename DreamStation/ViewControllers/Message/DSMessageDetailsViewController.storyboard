@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Message Details View Controller-->
+        <scene sceneID="EfY-FT-yJD">
+            <objects>
+                <viewController storyboardIdentifier="DSMessageDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LpD-az-cKt" customClass="DSMessageDetailsViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yv6-5K-m0i"/>
+                        <viewControllerLayoutGuide type="bottom" id="TPU-pe-pxq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i6K-DD-nlq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogc-nT-EBg">
+                                <rect key="frame" x="15" y="25" width="290" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ogc-nT-EBg" firstAttribute="top" secondItem="yv6-5K-m0i" secondAttribute="bottom" constant="5" id="82H-44-Xcx"/>
+                            <constraint firstItem="ogc-nT-EBg" firstAttribute="leading" secondItem="i6K-DD-nlq" secondAttribute="leading" constant="15" id="PK0-Sq-dzu"/>
+                            <constraint firstAttribute="trailing" secondItem="ogc-nT-EBg" secondAttribute="trailing" constant="15" id="aSb-I8-chd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailsLabel" destination="ogc-nT-EBg" id="bcN-SY-Y2u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDa-hM-oKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.33333333333333" y="247.07999999999998"/>
+        </scene>
+    </scenes>
+</document>

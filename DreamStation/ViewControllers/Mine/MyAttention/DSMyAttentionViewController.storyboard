@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Attention View Controller-->
+        <scene sceneID="O5k-o0-nVy">
+            <objects>
+                <viewController storyboardIdentifier="DSMyAttentionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="35u-QU-bEB" customClass="DSMyAttentionViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZPR-T9-LdR"/>
+                        <viewControllerLayoutGuide type="bottom" id="V1T-2L-bXt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ayk-KK-kVR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CKR-gZ-Y2B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="600" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-OP-w1t">
+                                <rect key="frame" x="152.5" y="225" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HYu-ae-K16"/>
+                                    <constraint firstAttribute="width" constant="70" id="Syg-RU-bwZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有请求投资方关注您的项目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoA-Cu-TQo">
+                                <rect key="frame" x="0.0" y="310" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2aL-0C-bvk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VoA-Cu-TQo" firstAttribute="top" secondItem="hYV-OP-w1t" secondAttribute="bottom" constant="15" id="7t2-Q1-Vqk"/>
+                            <constraint firstItem="hYV-OP-w1t" firstAttribute="top" secondItem="Ayk-KK-kVR" secondAttribute="topMargin" constant="225" id="EJX-1k-mUd"/>
+                            <constraint firstItem="hYV-OP-w1t" firstAttribute="centerX" secondItem="Ayk-KK-kVR" secondAttribute="centerX" id="HUW-tp-R8J"/>
+                            <constraint firstItem="VoA-Cu-TQo" firstAttribute="leading" secondItem="Ayk-KK-kVR" secondAttribute="leading" id="IU0-hU-o44"/>
+                            <constraint firstAttribute="trailing" secondItem="CKR-gZ-Y2B" secondAttribute="trailing" id="UML-k6-txi"/>
+                            <constraint firstAttribute="bottom" secondItem="CKR-gZ-Y2B" secondAttribute="bottom" id="e06-DH-b63"/>
+                            <constraint firstAttribute="trailing" secondItem="VoA-Cu-TQo" secondAttribute="trailing" id="gDj-2P-3jW"/>
+                            <constraint firstItem="CKR-gZ-Y2B" firstAttribute="leading" secondItem="Ayk-KK-kVR" secondAttribute="leading" id="jwn-uj-fYD"/>
+                            <constraint firstItem="CKR-gZ-Y2B" firstAttribute="top" secondItem="Ayk-KK-kVR" secondAttribute="top" id="r6t-IM-VF9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="VoA-Cu-TQo" id="auS-PC-CwG"/>
+                        <outlet property="imageView" destination="hYV-OP-w1t" id="AXw-Dy-AMu"/>
+                        <outlet property="tableView" destination="CKR-gZ-Y2B" id="BKp-tt-Sp1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ad-2b-SzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21" y="184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

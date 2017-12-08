@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mine My Project View Controller-->
+        <scene sceneID="UWa-W1-8WG">
+            <objects>
+                <viewController storyboardIdentifier="DSMineMyProjectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pFb-ER-nUM" customClass="DSMineMyProjectViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tvT-fF-2n1"/>
+                        <viewControllerLayoutGuide type="bottom" id="IhO-Nu-2DD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AhT-7S-te6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kBn-UD-V4c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="VGz-5z-f95">
+                                <rect key="frame" x="152" y="180" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="6ab-2S-ndH"/>
+                                    <constraint firstAttribute="height" constant="70" id="Ed1-6v-06K"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无项目信息！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRb-h0-tuD">
+                                <rect key="frame" x="0.0" y="265" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rRc-cr-Znh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxz-I5-AJB">
+                                <rect key="frame" x="15" y="615" width="345" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TfF-NA-A2Q"/>
+                                </constraints>
+                                <state key="normal" title="添加项目公司" backgroundImage="mine_login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addAction:" destination="pFb-ER-nUM" eventType="touchUpInside" id="nYC-dj-5go"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jRb-h0-tuD" firstAttribute="top" secondItem="VGz-5z-f95" secondAttribute="bottom" constant="15" id="0cX-tS-Cup"/>
+                            <constraint firstAttribute="trailing" secondItem="jRb-h0-tuD" secondAttribute="trailing" id="3Ma-im-QkZ"/>
+                            <constraint firstItem="hxz-I5-AJB" firstAttribute="leading" secondItem="AhT-7S-te6" secondAttribute="leading" constant="15" id="83E-TK-w8G"/>
+                            <constraint firstItem="VGz-5z-f95" firstAttribute="centerX" secondItem="kBn-UD-V4c" secondAttribute="centerX" id="8SY-iP-1ZJ"/>
+                            <constraint firstItem="kBn-UD-V4c" firstAttribute="top" secondItem="AhT-7S-te6" secondAttribute="top" id="C3N-5w-r2w"/>
+                            <constraint firstItem="kBn-UD-V4c" firstAttribute="leading" secondItem="AhT-7S-te6" secondAttribute="leading" id="Frw-uX-9fc"/>
+                            <constraint firstItem="VGz-5z-f95" firstAttribute="top" secondItem="AhT-7S-te6" secondAttribute="top" constant="180" id="W8H-ah-0lX"/>
+                            <constraint firstAttribute="trailing" secondItem="kBn-UD-V4c" secondAttribute="trailing" id="Xxv-Cr-pL9"/>
+                            <constraint firstItem="jRb-h0-tuD" firstAttribute="leading" secondItem="AhT-7S-te6" secondAttribute="leading" id="fK8-45-HPP"/>
+                            <constraint firstAttribute="trailing" secondItem="hxz-I5-AJB" secondAttribute="trailing" constant="15" id="iPN-v0-RIK"/>
+                            <constraint firstItem="hxz-I5-AJB" firstAttribute="top" secondItem="kBn-UD-V4c" secondAttribute="bottom" constant="8" id="rw8-fH-Edl"/>
+                            <constraint firstItem="IhO-Nu-2DD" firstAttribute="top" secondItem="hxz-I5-AJB" secondAttribute="bottom" constant="8" id="tak-kr-HF9"/>
+                            <constraint firstAttribute="bottom" secondItem="kBn-UD-V4c" secondAttribute="bottom" constant="60" id="tox-Bt-Qwd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTabelView" destination="kBn-UD-V4c" id="yAM-0v-UN6"/>
+                        <outlet property="tishiImage" destination="VGz-5z-f95" id="Xx6-8I-Vyd"/>
+                        <outlet property="tishiLabel" destination="jRb-h0-tuD" id="kdQ-sT-h1a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2M-Rc-Cvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="193"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_login" width="345" height="44"/>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

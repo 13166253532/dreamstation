@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--My Info View Controller-->
+        <scene sceneID="uNB-qv-aQY">
+            <objects>
+                <viewController storyboardIdentifier="DSMyInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lEQ-Q6-l2b" customClass="DSMyInfoViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9iQ-tP-nVn"/>
+                        <viewControllerLayoutGuide type="bottom" id="hGf-Ik-Q5i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2e0-j0-GGv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sge-NT-cWM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sge-NT-cWM" secondAttribute="trailing" id="481-Mi-8Qd"/>
+                            <constraint firstAttribute="bottom" secondItem="sge-NT-cWM" secondAttribute="bottom" id="B6V-6i-ShI"/>
+                            <constraint firstItem="sge-NT-cWM" firstAttribute="leading" secondItem="2e0-j0-GGv" secondAttribute="leading" id="ggz-IS-5yX"/>
+                            <constraint firstItem="sge-NT-cWM" firstAttribute="top" secondItem="2e0-j0-GGv" secondAttribute="top" id="tcG-OU-K5l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="sge-NT-cWM" id="2Bt-HN-KCT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3o-u6-zbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="245"/>
+        </scene>
+    </scenes>
+</document>

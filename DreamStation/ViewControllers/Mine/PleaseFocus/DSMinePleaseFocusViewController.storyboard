@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mine Please Focus View Controller-->
+        <scene sceneID="lUI-j2-wnP">
+            <objects>
+                <viewController storyboardIdentifier="DSMinePleaseFocusViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BRD-eK-DWJ" customClass="DSMinePleaseFocusViewController" customModule="DreamStation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nbt-6e-wbv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bn6-kt-hWg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8wc-LC-77Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_tixing" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-0F-dny">
+                                <rect key="frame" x="150" y="205" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="VjQ-8V-c6E"/>
+                                    <constraint firstAttribute="height" constant="75" id="wns-97-jwE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无请关注内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKU-Ed-ezJ">
+                                <rect key="frame" x="15" y="295" width="345" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-fe-hoA">
+                                <rect key="frame" x="15" y="0.0" width="345" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3gN-0F-dny" firstAttribute="top" secondItem="nbt-6e-wbv" secondAttribute="bottom" constant="185" id="54z-Yc-Ufo"/>
+                            <constraint firstItem="3gN-0F-dny" firstAttribute="centerX" secondItem="8wc-LC-77Y" secondAttribute="centerX" id="Hrp-SS-mhy"/>
+                            <constraint firstAttribute="bottom" secondItem="ZsQ-fe-hoA" secondAttribute="bottom" id="PIE-5f-BKF"/>
+                            <constraint firstItem="fKU-Ed-ezJ" firstAttribute="leading" secondItem="8wc-LC-77Y" secondAttribute="leading" constant="15" id="RAh-Yh-ksm"/>
+                            <constraint firstItem="ZsQ-fe-hoA" firstAttribute="leading" secondItem="8wc-LC-77Y" secondAttribute="leading" constant="15" id="RnQ-Bk-ZEf"/>
+                            <constraint firstAttribute="trailing" secondItem="fKU-Ed-ezJ" secondAttribute="trailing" constant="15" id="ZYd-0n-idV"/>
+                            <constraint firstAttribute="trailing" secondItem="ZsQ-fe-hoA" secondAttribute="trailing" constant="15" id="gzk-lL-KHM"/>
+                            <constraint firstItem="fKU-Ed-ezJ" firstAttribute="top" secondItem="3gN-0F-dny" secondAttribute="bottom" constant="15" id="nyw-iD-C2j"/>
+                            <constraint firstItem="ZsQ-fe-hoA" firstAttribute="top" secondItem="8wc-LC-77Y" secondAttribute="top" id="yTC-L0-AeG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="ZsQ-fe-hoA" id="9TV-FQ-Gje"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Us7-Dx-2WG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mine_tixing" width="70" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DSParkDetailsTitleCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="DSParkDetailsTitleCell" id="ZDX-IA-2Xh" customClass="DSParkDetailsTitleCell" customModule="DreamStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZDX-IA-2Xh" id="FCi-2W-3CD">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE8-Xf-gXl">
+                        <rect key="frame" x="15" y="0.0" width="105" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hot_Hline" translatesAutoresizingMaskIntoConstraints="NO" id="18t-yn-PJ1">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="z7q-VT-RvW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="18t-yn-PJ1" firstAttribute="leading" secondItem="FCi-2W-3CD" secondAttribute="leading" id="0bI-eE-yF1"/>
+                    <constraint firstAttribute="trailing" secondItem="18t-yn-PJ1" secondAttribute="trailing" id="CiF-gV-K8l"/>
+                    <constraint firstAttribute="trailing" secondItem="YE8-Xf-gXl" secondAttribute="trailing" constant="200" id="YzE-FG-39P"/>
+                    <constraint firstAttribute="bottom" secondItem="18t-yn-PJ1" secondAttribute="bottom" id="gPz-W1-7hu"/>
+                    <constraint firstItem="YE8-Xf-gXl" firstAttribute="leading" secondItem="FCi-2W-3CD" secondAttribute="leading" constant="15" id="shb-Ta-4tQ"/>
+                    <constraint firstAttribute="bottom" secondItem="YE8-Xf-gXl" secondAttribute="bottom" id="thb-X9-RvL"/>
+                    <constraint firstItem="YE8-Xf-gXl" firstAttribute="top" secondItem="FCi-2W-3CD" secondAttribute="top" id="tz3-HG-b7f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="YE8-Xf-gXl" id="wi1-AE-VHZ"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="65"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Hot_Hline" width="1" height="1"/>
+    </resources>
+</document>

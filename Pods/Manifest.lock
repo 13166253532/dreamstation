@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
+  - HMSegmentedControl (1.5.2)
+  - IQKeyboardManager (4.0.4)
+  - JPush-iOS-SDK (2.1.8)
+  - JSONModel (1.2.0)
+  - LKDBHelper (2.3.1):
+    - FMDB
+  - PKRevealController (2.0.6)
+  - UITableView-NXEmptyView (0.1.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - HMSegmentedControl
+  - IQKeyboardManager
+  - JPush-iOS-SDK
+  - JSONModel
+  - LKDBHelper
+  - PKRevealController
+  - UITableView-NXEmptyView
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  IQKeyboardManager: 4a6f83b540283c2645aaeba2bd8dc0f09b5c77f8
+  JPush-iOS-SDK: ea5761841ba9beb7e9dab7523c5e6bfe06a48995
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  LKDBHelper: 8d140170652a1ceef59247af4fb55e0a0dcd91dc
+  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  UITableView-NXEmptyView: 0bc404cfd9c201af518a63240ac4ac4dad2c69c2
+
+PODFILE CHECKSUM: afc944907bf0a1c6f679b67d92d186ef1e4cac10
+
+COCOAPODS: 1.0.1
